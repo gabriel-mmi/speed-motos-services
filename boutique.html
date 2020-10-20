@@ -20,32 +20,86 @@
 
         <!-- Contenu -->
 
-        <section class="articles">
+        <!-- Séléction d'articles en haut de page -->
+        <div class="categories">
             <ul class="flex center">
-                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Casques</p></a></li>
-                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Gans</p></a></li>
-                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Vestes</p></a></li>
+                <li><a onclick="OnSelectShopCategory('casques')"><img src="https://picsum.photos/100/100" alt=""><p>Casques</p></a></li>
+                <li><a onclick="OnSelectShopCategory('gans')"><img src="https://picsum.photos/100/100" alt=""><p>Gans</p></a></li>
+                <li><a onclick="OnSelectShopCategory('vestes')"><img src="https://picsum.photos/100/100" alt=""><p>Vestes</p></a></li>
             </ul>
-        </section>
+        </div>
 
-        <section class="galerie">
-            <div class="galerie">
-                <ul class="images" id="galerie-images">
-                    <li class="active"><img src="https://picsum.photos/960/540" alt=""></li>
-                    <li><img src="assets/images/franck.jpg" alt=""></li>
-                    <li><img src="https://picsum.photos/960/540" alt=""></li>
+        <!-- Galerie lorsque aucun item n'est séléctionné -->
+        <div class="galerie" id ="galerie">
+            <ul class="images" id="galerie-images">
+                <li class="active"><img src="https://picsum.photos/960/540" alt=""></li>
+                <li><img src="assets/images/franck.jpg" alt=""></li>
+                <li><img src="https://picsum.photos/960/540" alt=""></li>
+            </ul>
+            <div class="ui">
+                <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
+                <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
+                <ul class="flex center" id="circles">
+                    <button class="circle active"></button>
+                    <button class="circle"></button>
+                    <button class="circle"></button>
                 </ul>
-                <div class="ui">
-                    <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
-                    <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
-                    <ul class="flex center" id="circles">
-                        <button class="circle active"></button>
-                        <button class="circle"></button>
-                        <button class="circle"></button>
-                    </ul>
-                </div>
             </div>
-        </section>
+        </div>
+
+        <div class="articles-list" id="articles-list">
+            <!-- Articles dans la categorie "Casques" -->
+            <ul id="casques">
+                <li><div class="article-item">
+                    <img src="https://picsum.photos/id/684/1920/1080" alt="">
+                    <div class="textes">
+                        <h2>TITRE</h2>
+                        <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
+                        <button>19$</button>
+                    </div>
+                </div></li>
+            </ul>
+
+            <!-- Articles dans la categorie "Gans" -->
+            <ul id="gans">
+                <li><div class="article-item">
+                    <img src="https://picsum.photos/id/684/1920/1080" alt="">
+                    <div class="textes">
+                        <h2>TITRE</h2>
+                        <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
+                        <button>19$</button>
+                    </div>
+                </div></li>
+                <li><div class="article-item">
+                    <div class="textes">
+                        <h2>TITRE</h2>
+                        <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
+                        <button>19$</button>
+                    </div>
+                    <img src="https://picsum.photos/id/684/1920/1080" alt="">
+                </div></li>
+            </ul>
+
+            <!-- Articles dans la categorie "Vestes" -->
+            <ul id="vestes">
+                <li><div class="article-item">
+                    <img src="https://picsum.photos/id/684/1920/1080" alt="">
+                    <div class="textes">
+                        <h2>TITRE</h2>
+                        <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
+                        <button>19$</button>
+                    </div>
+                </div></li>
+                <li><div class="article-item">
+                    <div class="textes">
+                        <h2>TITRE</h2>
+                        <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
+                        <button>19$</button>
+                    </div>
+                    <img src="https://picsum.photos/id/684/1920/1080" alt="">
+                </div></li>
+            </ul>
+        </div>
 
         <!--  -->
 
