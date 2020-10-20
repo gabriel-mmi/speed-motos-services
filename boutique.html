@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Boutique - Speed moto services</title>
+        <link rel="icon" href="assets/images/favicon.ico" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container"><img src="assets/images/logo.png" alt=""></div>
+            <ul class="flex between">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="active" href="boutique.html">Boutique</a></li>
+                <li><a href="#">Devis</a></li>
+                <li><a href="apropos.html">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Contenu -->
+
+        <section class="articles">
+            <ul class="flex center">
+                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Casques</p></a></li>
+                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Gans</p></a></li>
+                <li><a href=""><img src="https://picsum.photos/100/100" alt=""><p>Vestes</p></a></li>
+            </ul>
+        </section>
+
+        <section class="galerie">
+            <div class="galerie">
+                <ul class="images" id="galerie-images">
+                    <li class="active"><img src="https://picsum.photos/960/540" alt=""></li>
+                    <li><img src="assets/images/franck.jpg" alt=""></li>
+                    <li><img src="https://picsum.photos/960/540" alt=""></li>
+                </ul>
+                <div class="ui">
+                    <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
+                    <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/svg/arrow.svg" alt=""></button>
+                    <ul class="flex center" id="circles">
+                        <button class="circle active"></button>
+                        <button class="circle"></button>
+                        <button class="circle"></button>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--  -->
+
+        <footer>
+            <ul class="flex between">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#">Demander un devis</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Nos motos</a></li>
+            </ul>
+            <div class="container flex">
+                <img src="assets/images/logo.png" alt="">
+                <p>Speed moto services</p>
+           </div>
+           <ul class="flex center politics">
+               <li><a href="#">Politique de confidentialité</a></li>
+               <li>-</li>
+               <li><a href="#">Utilisation des cookies</a></li>
+               <li>-</li>
+               <li><a href="#">Conditions d'utilisation</a></li>
+               <li>-</li>
+               <li><a href="#">Plan du site</a></li>
+               <li>-</li>
+               <li><a href="#">Informations commerciales</a></li>
+               <li>-</li>
+               <li><a href="#">Préferences</a></li>
+               <li>-</li>
+               <li><a href="#">Cookies</a></li>
+           </ul>
+           <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
+        </footer>
+
+    </body>
+    <script src="script.js"></script>
+</html>

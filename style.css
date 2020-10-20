@@ -1,0 +1,347 @@
+/* Polices */
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("assets/fonts/HelveticaNeueLTStd-Roman.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
+    font-weight: bold;
+}
+
+/* Communes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue";
+}
+
+p, a {
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 5.6vw;
+}
+
+h2 {
+    font-size: 3.75vw;
+}
+
+h3 {
+    font-size: 1.87vw;
+}
+
+.container {
+    position: relative;
+}
+
+/* Flex lists */
+.flex {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.flex.between {
+    justify-content: space-between;
+}
+
+.flex.around {
+    justify-content: space-around;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+.flex li:not(:last-child) {
+    margin-right: 4vw;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 6vw;
+    padding: 0px 11.45vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Image */
+header .container {
+    width: 7vw;
+    height: 100%;
+}
+
+header .container img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 50%);
+}
+
+/* Navigation links */
+header ul li a {
+    font-weight: bold;
+    transition: color 0.5s, border-bottom-color 0.5s;
+}
+
+header ul:hover li a, header ul:hover li a.active {
+    color: rgba(0, 0, 0, 0.39);
+    border-bottom-color: rgba(0, 0, 0, 0.39);
+}
+
+header ul li a:hover, header ul li a.active:hover {
+    color: black;
+    border-bottom-color: black;
+}
+
+header ul li a.active {
+    border-bottom: 4px solid black;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 3vw 11.45vw;
+    background-color: rgb(17, 17, 17);
+}
+
+/* Liens */
+footer ul:first-child li a {
+    color: white;
+}
+
+/* Signature (icon et nom) */
+footer .container {
+    width: 100%;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    margin-top: 5%;
+    padding-bottom: 0.78vw;
+}
+
+footer .container img {
+    width: 2.6vw;
+    margin-right: 0.78vw;
+}
+
+footer .container p {
+    color: white;
+}
+
+/* Conditions d’utilisation */
+footer .politics {
+    margin-top: 3%;
+}
+
+footer .politics li, footer .politics li a, footer .copyright {
+    color: rgb(92, 92, 92);
+}
+
+footer .politics li, footer .politics li a, footer .copyright {
+    font-size: 0.78vw;
+}
+
+footer .politics li:not(:last-child) {
+    margin-right: 0.36vw;
+}
+
+footer .politics li a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+footer .copyright {
+    margin-top: 3.5%;
+}
+
+/* Paragraphe avec illustration a gauche */
+.illustr-left-para {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 40px;
+    grid-auto-rows: 1fr;
+
+    width: 100%;
+    padding: 15vw 11.45vw 0 11.45vw;
+}
+
+.illustr-left-para img {
+    width: 100%;
+}
+
+.illustr-left-para div h2, .illustr-left-para div p {
+    color: white;
+}
+
+/* Sections */
+section {
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.rencontrer .bg {
+    opacity: 0.8;
+}
+
+.rencontrer .two-blocks {
+    padding: 20vw 11.45vw 45vw 11.45vw;
+}
+
+.rencontrer .two-blocks .block, .rencontrer .two-blocks .block p {
+    color: white;
+}
+
+.rencontrer .two-blocks .block {
+    padding: 2.5vw;
+    width: 27vw;
+    height: 24vw;
+    background-color: black;
+    border-top: 5px solid white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.rencontrer .two-blocks iframe {
+    width: 36vw;
+    height: 23.4vw;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}
+
+.articles {
+    width: 100%;
+    margin-top: 6.1vw;
+    padding: 2vw 0px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.articles ul li p {
+    text-align: center;
+}
+
+.articles ul li img {
+    width: 5.2vw;
+    border-radius: 100px;
+}
+
+/* Galerie */
+section.galerie {
+    margin: 5vw 0px;
+}
+
+div.galerie {
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+}
+
+/* Images list */
+div.galerie .images li img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+div.galerie .images li:not(.active) {
+    display: none;
+}
+
+div.galerie .ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Arrows */
+div.galerie .ui .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.438);
+    width: 2.1vw;
+    height: 2.1vw;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+div.galerie .ui .arrow img {
+    width: 1.1vw;
+    position: absolute;
+    top: 25%;
+}
+
+div.galerie .ui .arrow.right {
+    right: -2.5%;
+}
+
+div.galerie .ui .arrow.right img {
+    transform: rotate(270deg);
+    right: 25%;
+
+}
+
+div.galerie .ui .arrow.left {
+    left: -2.5%;
+}
+
+div.galerie .ui .arrow.left img {
+    transform: rotate(90deg);
+    left: 25%;
+}
+
+/* User interface */
+div.galerie .ui ul {
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+div.galerie .circle {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.galerie .circle.active {
+    background-color: white;
+}
+
+div.galerie .circle:not(:last-child) {
+    margin-right: 1vw;
+}
+
