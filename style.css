@@ -20,14 +20,21 @@
 }
 
 p, a {
-    font-size: 1.1vw;
+    font-size: 1.25vw;
     text-decoration: none;
     color: black;
+    font-family: "HelveticaNeue"; /*Modif*/
+    font-weight: bold;/*Modif*/
+    
 }
 
+<<<<<<< HEAD
+
+=======
 a {
     cursor: pointer;
 }
+>>>>>>> 07694e497dc6624b555f4444c30315c3a8cc136f
 
 ul {
     list-style: none;
@@ -386,6 +393,161 @@ section {
     margin-right: 1vw;
 }
 
+/* Modifs à moi a partir d'ici */
+
+.formulaire img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url("assets/images/fond_formulaire_blur.png");*/
+}
+
+.form_button{
+    display: inline-block;
+    position: absolute;
+    background-color: #307CFF;
+    border: none;
+    font-size: 16px;
+    width: 20%;
+    height: 7%;
+    text-align: center;
+    vertical-align: center;
+    transform: translate(-50%,50%);
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    color: white;
+}
+
+.form_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.form_button:hover{
+    background-color: #0054e6;
+}
+
+.form_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .form_button:hover span {
+    padding-right: 25px;
+}
+  
+.form_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*Franck Homepage*/
+.franck_container_HP {
+    width: auto;
+    height: 100vh;
+    background-image: url(assets/images/motoHP1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.a_propos {
+    color: white;
+    font-size: 36px;
+    margin-top: 175px;
+    display: inline-block;
+    margin-left: 52vw;
+    padding-top: 20px;
+    border-top: 4px solid white;
+    width: 30vw;
+}
+
+.resume_a_propos {
+    color: white;
+    font-size: 24px;
+    margin-top: 45px;
+    display: inline-block;
+    margin-left: 52vw;
+    width: 30vw;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 5px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(220, 0, 0);
+    margin-top: 70px;
+    margin-left: 52vw;
+    display: flex;
+    align-items: space-around;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.fleche {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+button p {
+    color: white;
+}
+
+.franck_image {
+    width: 25vw;
+    top: 175px;
+    height: 60vh;
+    left: 10vw;
+    background-color: white;
+    position: absolute;
+}
+
+/* Avis Homepage */
+
+.avis_container {
+    width: auto;
+    height: 530px;
+    background-color: #F0F2EF;
+    position: relative;
+}
+
+.titre_avis {
+    font-size: 36px;
+    color: black;
+    display: block;
+    width: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.avis_container ul li {
+    display: inline-block;
+    margin-top: 20vh;
+    margin-left: 24vw;
+}
+
 /* Liste des articles */
 .articles-list {
     width: 100%;
@@ -428,3 +590,4 @@ section {
     font-size: 18px;
     margin-top: 25px;
 }
+
