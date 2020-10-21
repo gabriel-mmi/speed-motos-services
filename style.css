@@ -103,11 +103,8 @@ header .container img {
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 50%);
-    transition: width 1s;
 }
-.container img:hover{
-    width: 150%;
-}
+
 
 /* Navigation links */
 header ul li a {
