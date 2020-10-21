@@ -6,13 +6,16 @@
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.categories ul li:not(:last-child) {
+    margin-right: 4vw;
+}
+
 .categories ul li p {
     text-align: center;
 }
 
 .categories ul li img {
     width: 5.2vw;
-    border-radius: 100px;
 }
 
 /* Liste des articles */
@@ -43,21 +46,18 @@
 }
 
 .article-item img {
+    width: auto;
     height: 100%;
     max-height: 350px;
     margin: 0 auto;
 }
 
-.article-item .textes {
+.article-item .container.text {
     padding: 30px;
     background-color: white;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.12);
 }
 
-.article-item .textes button {
-    padding: 5px 20px 1px 20px;
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    margin-top: 25px;
+.article-item .container.text .button {
+    margin-top: 2vw;
 }

@@ -11,7 +11,7 @@
     font-weight: bold;
 }
 
-/* Communes */
+/* Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,92 +19,97 @@
     font-family: "HelveticaNeue";
 }
 
-p, a {
+/* Titres */
+h1 {
+    font-size: 5.6vw;
+    margin-bottom: 1.5vw;
+}
+
+h2 {
+    font-size: 3.75vw;
+    margin-bottom: 1vw;
+}
+
+h3 {
+    font-size: 1.87vw;
+    margin-bottom: 0.5vw;
+}
+
+/* Textes */
+p {
     font-size: 1.25vw;
-    text-decoration: none;
-    color: black;
 }
 
 a {
+    font-size: 1.25vw;
     cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    width: 100%
 }
 
 ul {
     list-style: none;
 }
 
-h1 {
-    font-size: 5.6vw;
-}
-
-h2 {
-    font-size: 3.75vw;
-}
-
-h3 {
-    font-size: 1.87vw;
-}
-
-.container {
+/* Sections */
+section {
+    width: 100%;
+    padding: 0px 11.45vw;
     position: relative;
 }
 
-div {
-    transition: opacity 0.4s;
+section.first {
+    margin-top: 6vw;
 }
 
-.bg {
+section img.section-bg {
     width: 100%;
     position: absolute;
-    z-index: -1;
-    overflow: hidden;
+    top: 0;
+    left: 0;
     pointer-events: none;
+    z-index: -10;
 }
 
-section {
-    position: relative;
+/* Containers */
+.container {
+
 }
 
-/* Flex lists */
-.flex {
+.container.flex {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
-.flex.between {
+.container.flex.between {
     justify-content: space-between;
 }
 
-.flex.around {
+.container.flex.around {
     justify-content: space-around;
 }
 
-.flex.center {
+.container.flex.center {
     justify-content: center;
 }
 
-.flex li:not(:last-child) {
-    margin-right: 4vw;
-}
-
-/* Paragraphe avec illustration */
-.flex-grid {
+.container.grid {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 40px;
-    grid-auto-rows: 1fr;
-
-    width: 100%;
-    padding: 15vw 11.45vw 0 11.45vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
 }
 
-.flex-grid img {
-    width: 100%;
+.container.text {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
-.flex-grid div h2, .flex-grid div p {
-    color: white;
+.container.center {
+    text-align: center;
 }
 
 /* Boutons */
@@ -116,6 +121,7 @@ section {
     display: flex;
     align-items: center;
     border: none;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
@@ -137,7 +143,7 @@ section {
     right: 5%;
 }
 
-/* Differents types de boutons */
+/* 3 differents types */
 .button.landing {
     background-color: #307CFF;
 }
@@ -166,6 +172,7 @@ section {
     left: 50%;
     transform: translate(-50%, -37%);
     transition: transform 0.4s, opacity 0.4s;
+    font-size: 22px;
 }
 
 .button.shop p:last-child {

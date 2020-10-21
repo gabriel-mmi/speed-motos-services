@@ -1,30 +1,54 @@
-.rencontrer .bg {
-    opacity: 0.8;
+div {
+    transition: opacity 0.4s;
 }
 
-.rencontrer .two-blocks {
-    padding: 20vw 11.45vw 45vw 11.45vw;
+/* Frank presentation */
+section.first {
+    margin-top: 0px;
 }
 
-.rencontrer .two-blocks .block, .rencontrer .two-blocks .block p {
+section.first .section-bg {
+    z-index: -1;
+}
+
+section.first .container.grid {
+    padding-top: 15vw;
+}
+
+section.first .container.text, section.first .container.text p {
     color: white;
 }
 
-.rencontrer .two-blocks .block {
-    padding: 2.5vw;
-    width: 27vw;
-    height: 24vw;
-    background-color: black;
-    border-top: 5px solid white;
-    position: absolute;
-    left: 25%;
-    top: 25%;
+/* Location section */
+.location .section-bg {
+    opacity: 0.8;
 }
 
-.rencontrer .two-blocks iframe {
-    width: 36vw;
-    height: 23.4vw;
+.location .float-parent {
+    width: 100%;
+    height: 65vw;
+    position: relative;
+}
+
+.location .container.float {
+    width: 35%;
+    height: 35%;
     position: absolute;
-    left: 40%;
-    top: 50%;
+    top: 17vw;
+    left: 10vw;
+    padding: 3%;
+    background-color: black;
+    border-top: 4px solid white;
+}
+
+.location .container.float, .location .container.float p {
+    color: white;
+}
+
+.location iframe {
+    width: 37vw;
+    height: 25vw;
+    position: absolute;
+    top: 35vw;
+    right: 15vw;
 }

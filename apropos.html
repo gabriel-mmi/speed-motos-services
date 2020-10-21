@@ -10,9 +10,9 @@
 
     <body>
         <style type="text/css">@import url("css/header.css");</style>
-        <header>
-            <div class="container"><img src="assets/images/icons/logo.png" alt=""></div>
-            <ul class="flex between">
+        <header class="container flex between">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt=""></div>
+            <ul class="container flex between">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="boutique.html">Boutique</a></li>
                 <li><a href="#">Devis</a></li>
@@ -22,20 +22,21 @@
 
         <!-- Contenu -->
 
-            <section>
-                <img src="assets/images/ellipse.svg" alt="" class="bg" style="top: 2.5vw;">
-                <div class="flex-grid" id="about-one">
+            <section class="first">
+                <img src="assets/images/ellipse.svg" alt="" class="section-bg" style="top: 2.5vw;">
+                <div class="container grid" id="about-one">
                     <img src="assets/images/franck.jpg" alt="">
-                    <div>
+                    <div class="container text">
                         <h2>Frank & co</h2>
                         <p>Cupidatat est nulla cupidatat non dolor ipsum id in adipisicing excepteur pariatur labore. Adipisicing enim sunt excepteur labore quis ea eu occaecat pariatur ullamco consequat. Consequat exercitation ea elit qui ut ipsum officia. In irure labore officia non incididunt tempor. Nulla eu voluptate nisi sint sit fugiat.</p>
                     </div>
                 </div>
             </section>
-            <section class="rencontrer">
-                <img src="assets/images/moto1.jpg" alt="" class="bg" style="z-index: -2;">
-                <div class="two-blocks" id="about-two">
-                    <div class="block">
+
+            <section class="location">
+                <img src="assets/images/moto1.jpg" alt="" class="section-bg" style="z-index: -2;">
+                <div class="float-parent" id="about-two">
+                    <div class="container float">
                         <h3>Nous rencontrer</h3>
                         <p>Id eu velit amet laboris qui consectetur cillum culpa non. Magna enim eiusmod tempor commodo tempor anim commodo. Qui et Lorem dolore dolor duis ad ut veniam magna ut incididunt sit cupidatat. Ex sint fugiat laborum culpa cillum id et veniam et mollit officia ut. Aute non commodo non veniam.</p>
                     </div>
@@ -46,34 +47,34 @@
         
         <style type="text/css">@import url("css/footer.css");</style>
         <footer>
-             <ul class="flex between">
-                 <li><a href="#">Accueil</a></li>
-                 <li><a href="#">Contactez-nous</a></li>
-                 <li><a href="#">Demander un devis</a></li>
-                 <li><a href="#">Boutique</a></li>
-                 <li><a href="#">Nos motos</a></li>
-             </ul>
-             <div class="container flex">
-                <img src="assets/images/icons/logo.png" alt="">
-                 <p>Speed moto services</p>
-            </div>
-            <ul class="flex center politics">
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li>-</li>
-                <li><a href="#">Utilisation des cookies</a></li>
-                <li>-</li>
-                <li><a href="#">Conditions d'utilisation</a></li>
-                <li>-</li>
-                <li><a href="#">Plan du site</a></li>
-                <li>-</li>
-                <li><a href="#">Informations commerciales</a></li>
-                <li>-</li>
-                <li><a href="#">Préferences</a></li>
-                <li>-</li>
-                <li><a href="#">Cookies</a></li>
+            <ul class="container flex between links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#">Demander un devis</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Nos motos</a></li>
             </ul>
-            <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
-         </footer>
+            <div class="container flex sign">
+                <img src="assets/images/icons/logo.png" alt="">
+                <p>Speed moto services</p>
+           </div>
+           <ul class="container flex center politics">
+               <li><a href="#">Politique de confidentialité</a></li>
+               <li>-</li>
+               <li><a href="#">Utilisation des cookies</a></li>
+               <li>-</li>
+               <li><a href="#">Conditions d'utilisation</a></li>
+               <li>-</li>
+               <li><a href="#">Plan du site</a></li>
+               <li>-</li>
+               <li><a href="#">Informations commerciales</a></li>
+               <li>-</li>
+               <li><a href="#">Préferences</a></li>
+               <li>-</li>
+               <li><a href="#">Cookies</a></li>
+           </ul>
+           <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
+        </footer>
 
     </body>
     <script src="js/apropos.js"></script>

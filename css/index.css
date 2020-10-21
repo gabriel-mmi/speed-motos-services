@@ -1,3 +1,23 @@
+/* Frank section */
+section.first {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    color: white;
+}
+
+section.first .container.grid {
+    column-gap: 150px;
+}
+
+section.first p {
+    color: white;
+    margin-bottom: 1vw;
+}
+
+section.first .container.text {
+    border-top: 4px solid white;
+}
+
 /* Formulaire */
 .formulaire img{
     width: 100%;
@@ -53,78 +73,6 @@
 .form_button:hover span:after {
     opacity: 1;
     right: 0;
-}
-
-
-/* Section apropos */
-.franck_container_HP {
-    width: auto;
-    height: 100vh;
-    background-image: url(https://media.lesechos.com/api/v1/images/view/5dfb1ead3e454677d03dcfd5/1280x720/0602427031117-web-tete.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
-
-.a_propos {
-    color: white;
-    font-size: 36px;
-    margin-top: 175px;
-    display: inline-block;
-    margin-left: 52vw;
-    padding-top: 20px;
-    border-top: 4px solid white;
-    width: 30vw;
-}
-
-.resume_a_propos {
-    color: white;
-    font-size: 24px;
-    margin-top: 45px;
-    display: inline-block;
-    margin-left: 52vw;
-    width: 30vw;
-}
-
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 5px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: rgba(220, 0, 0);
-    margin-top: 70px;
-    margin-left: 52vw;
-    display: flex;
-    align-items: space-around;
-    font-family: "HelveticaNeue";
-    font-weight: bold;
-}
-
-.styled:hover {
-    background-color: rgba(255, 0, 0, 1);
-}
-
-.fleche {
-    width: 20px;
-    height: 20px;
-    right: 20px;
-    margin-top: 10px;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-button p {
-    color: white;
-}
-
-.franck_image {
-    width: 25vw;
-    top: 175px;
-    height: 60vh;
-    left: 10vw;
-    background-color: white;
-    position: absolute;
 }
 
 /* Section avis */

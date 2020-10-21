@@ -11,19 +11,19 @@ footer ul:first-child li a {
 }
 
 /* Signature (icon et nom) */
-footer .container {
+footer .sign {
     width: 100%;
     border-bottom: 2px solid rgb(63, 63, 63);
     margin-top: 5%;
     padding-bottom: 0.78vw;
 }
 
-footer .container img {
+footer .sign img {
     width: 2.6vw;
     margin-right: 0.78vw;
 }
 
-footer .container p {
+footer .sign p {
     color: white;
 }
 

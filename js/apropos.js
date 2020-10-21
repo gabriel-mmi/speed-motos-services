@@ -4,7 +4,7 @@ const aboutTwo = document.getElementById("about-two");
 aboutTwo.style.opacity = 0;
 
 window.addEventListener("scroll", function () {
-    if(scrollY > 550) {
+    if(scrollY > 500) {
         aboutOne.style.opacity = 0;
         aboutTwo.style.opacity = 1;
     }else {

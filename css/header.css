@@ -6,19 +6,18 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
     background-color: white;
     z-index: 1;
 }
 
 /* Image */
-header .container {
+header .icon-container {
     width: 7vw;
     height: 100%;
+    position: relative;
 }
 
-header .container img {
+header .icon-container img {
     width: 100%;
     position: absolute;
     left: 50%;
@@ -27,7 +26,12 @@ header .container img {
 }
 
 /* Navigation links */
+header ul {
+    width: 40%;
+}
+
 header ul li a {
+    color: black;
     font-weight: bold;
     transition: color 0.5s, border-bottom-color 0.5s;
 }
