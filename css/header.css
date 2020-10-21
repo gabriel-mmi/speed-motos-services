@@ -1,0 +1,47 @@
+/* Header */
+header {
+    width: 100vw;
+    height: 6vw;
+    padding: 0px 11.45vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1;
+}
+
+/* Image */
+header .container {
+    width: 7vw;
+    height: 100%;
+}
+
+header .container img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 50%);
+}
+
+/* Navigation links */
+header ul li a {
+    font-weight: bold;
+    transition: color 0.5s, border-bottom-color 0.5s;
+}
+
+header ul:hover li a, header ul:hover li a.active {
+    color: rgba(0, 0, 0, 0.39);
+    border-bottom-color: rgba(0, 0, 0, 0.39);
+}
+
+header ul li a:hover, header ul li a.active:hover {
+    color: black;
+    border-bottom-color: black;
+}
+
+header ul li a.active {
+    border-bottom: 4px solid black;
+}

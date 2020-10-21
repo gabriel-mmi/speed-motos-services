@@ -1,0 +1,188 @@
+/* Polices */
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("assets/fonts/HelveticaNeueLTStd-Roman.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
+    font-weight: bold;
+}
+
+/* Communes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue";
+}
+
+p, a {
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 5.6vw;
+}
+
+h2 {
+    font-size: 3.75vw;
+}
+
+h3 {
+    font-size: 1.87vw;
+}
+
+.container {
+    position: relative;
+}
+
+div {
+    transition: opacity 0.4s;
+}
+
+.bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+section {
+    position: relative;
+}
+
+/* Flex lists */
+.flex {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.flex.between {
+    justify-content: space-between;
+}
+
+.flex.around {
+    justify-content: space-around;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+.flex li:not(:last-child) {
+    margin-right: 4vw;
+}
+
+/* Paragraphe avec illustration */
+.flex-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 40px;
+    grid-auto-rows: 1fr;
+
+    width: 100%;
+    padding: 15vw 11.45vw 0 11.45vw;
+}
+
+.flex-grid img {
+    width: 100%;
+}
+
+.flex-grid div h2, .flex-grid div p {
+    color: white;
+}
+
+/* Boutons */
+.button {
+    position: relative;
+    width: 250px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button img {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    width: 11%;
+    transition: right 0.3s;
+}
+
+.button p, .button a {
+    color: white;
+    font-size: 145%;
+}
+
+.button:hover img {
+    right: 5%;
+}
+
+/* Differents types de boutons */
+.button.landing {
+    background-color: #307CFF;
+}
+
+.button.landing:active {
+    background-color: #1755c0;
+}
+
+.button.classic {
+    background-color: #DA291C;
+}
+
+.button.classic:active {
+    background-color: #a1170d;
+}
+
+.button.shop {
+    background-color: #DA291C;
+    width: 25%;
+    height: 18%;
+}
+
+.button.shop p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -37%);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.button.shop p:last-child {
+    opacity: 0;
+    transform: translate(-50%, -37%) rotateY(90deg);
+}
+
+.button.shop:hover {
+    background-color: #c52216;
+}
+
+.button.shop:hover p:first-child {
+    opacity: 0;
+    transform: translate(-50%, -37%) rotateY(90deg);
+}
+
+.button.shop:hover p:last-child {
+    opacity: 1;
+    transform: translate(-50%, -37%) rotateY(0deg);
+}

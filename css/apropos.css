@@ -1,0 +1,30 @@
+.rencontrer .bg {
+    opacity: 0.8;
+}
+
+.rencontrer .two-blocks {
+    padding: 20vw 11.45vw 45vw 11.45vw;
+}
+
+.rencontrer .two-blocks .block, .rencontrer .two-blocks .block p {
+    color: white;
+}
+
+.rencontrer .two-blocks .block {
+    padding: 2.5vw;
+    width: 27vw;
+    height: 24vw;
+    background-color: black;
+    border-top: 5px solid white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.rencontrer .two-blocks iframe {
+    width: 36vw;
+    height: 23.4vw;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}

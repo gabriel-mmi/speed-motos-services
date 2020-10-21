@@ -1,0 +1,54 @@
+/* Footer */
+footer {
+    width: 100%;
+    padding: 3vw 11.45vw;
+    background-color: rgb(17, 17, 17);
+}
+
+/* Liens */
+footer ul:first-child li a {
+    color: white;
+}
+
+/* Signature (icon et nom) */
+footer .container {
+    width: 100%;
+    border-bottom: 2px solid rgb(63, 63, 63);
+    margin-top: 5%;
+    padding-bottom: 0.78vw;
+}
+
+footer .container img {
+    width: 2.6vw;
+    margin-right: 0.78vw;
+}
+
+footer .container p {
+    color: white;
+}
+
+/* Conditions d’utilisation */
+footer .politics {
+    margin-top: 3%;
+}
+
+footer .politics li, footer .politics li a, footer .copyright {
+    color: rgb(92, 92, 92);
+}
+
+footer .politics li, footer .politics li a, footer .copyright {
+    font-size: 0.78vw;
+}
+
+footer .politics li:not(:last-child) {
+    margin-right: 0.36vw;
+}
+
+footer .politics li a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+footer .copyright {
+    margin-top: 3.5%;
+}
