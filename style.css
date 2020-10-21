@@ -23,18 +23,11 @@ p, a {
     font-size: 1.25vw;
     text-decoration: none;
     color: black;
-    font-family: "HelveticaNeue"; /*Modif*/
-    font-weight: bold;/*Modif*/
-    
 }
 
-<<<<<<< HEAD
-
-=======
 a {
     cursor: pointer;
 }
->>>>>>> 07694e497dc6624b555f4444c30315c3a8cc136f
 
 ul {
     list-style: none;
@@ -255,10 +248,6 @@ section {
     margin-top: 6.1vw;
     padding: 2vw 0px;
     background-color: rgba(0, 0, 0, 0.05);
-}
-
-.categories ul li {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
 }
 
 .categories ul li p {
