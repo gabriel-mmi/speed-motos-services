@@ -250,6 +250,10 @@ section {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.categories ul li {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+}
+
 .categories ul li p {
     text-align: center;
 }
@@ -361,6 +365,7 @@ section {
 
 .articles-list .article-item {
     width: 100%;
+    height: 20vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
@@ -369,20 +374,19 @@ section {
 
 
 .articles-list li:not(:first-child) {
-    margin-top: 2vw;
+    margin-top: 8vw;
 }
 
 .article-item img {
-    width: 100%;
-}
-
-.articles-list .article-item img, .articles-list .article-item .textes {
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    max-height: 350px;
+    margin: 0 auto;
 }
 
 .article-item .textes {
     padding: 30px;
     background-color: white;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.12);
 }
 
 .article-item .textes button {

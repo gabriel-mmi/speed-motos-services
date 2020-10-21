@@ -30,7 +30,7 @@ function OnSelectShopCategory (itemName) {
     document.getElementById("articles-list").style.display = "block";
 
     document.getElementById("casques").style.display = "none";
-    document.getElementById("gans").style.display = "none";
+    document.getElementById("gants").style.display = "none";
     document.getElementById("vestes").style.display = "none";
 
     document.getElementById(itemName).style.display = "block";
