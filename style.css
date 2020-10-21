@@ -20,10 +20,15 @@
 }
 
 p, a {
-    font-size: 1.1vw;
+    font-size: 1.25vw;
     text-decoration: none;
     color: black;
+    font-family: "HelveticaNeue"; /*Modif*/
+    font-weight: bold;/*Modif*/
+    
 }
+
+
 
 ul {
     list-style: none;
@@ -343,5 +348,64 @@ div.galerie .circle.active {
 
 div.galerie .circle:not(:last-child) {
     margin-right: 1vw;
+}
+
+/* Modifs à moi a partir d'ici */
+
+.formulaire img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url("assets/images/fond_formulaire_blur.png");*/
+}
+
+.form_button{
+    display: inline-block;
+    position: absolute;
+    background-color: #307CFF;
+    border: none;
+    font-size: 16px;
+    width: 20%;
+    height: 7%;
+    text-align: center;
+    vertical-align: center;
+    transform: translate(-50%,50%);
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    color: white;
+}
+
+.form_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.form_button:hover{
+    background-color: #0054e6;
+}
+
+.form_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .form_button:hover span {
+    padding-right: 25px;
+}
+  
+.form_button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
