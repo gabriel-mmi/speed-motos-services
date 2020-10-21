@@ -71,15 +71,15 @@ h3 {
 /* Header */
 header {
     width: 100vw;
-    height: 6vw;
-    padding: 0px 11.45vw;
+    height: 5.23vw;
+    padding: 0px 4.69vw;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
 }
 
 /* Image */
@@ -89,11 +89,15 @@ header .container {
 }
 
 header .container img {
-    width: 100%;
+    width: 110%;
     position: absolute;
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 50%);
+    transition: width 1s;
+}
+.container img:hover{
+    width: 150%;
 }
 
 /* Navigation links */
@@ -115,7 +119,38 @@ header ul li a:hover, header ul li a.active:hover {
 header ul li a.active {
     border-bottom: 4px solid black;
 }
+/* ContenuVideo */
+.video{
+    width: 100%;
+}
+.video video {
+    z-index: 1;
+    width: 100%;
+    /* transition: all 1s; */
+}
+/* video:hover {
+    filter: opacity();
+} */
 
+h1.textesurpose{
+    position: absolute;
+    z-index: 2;
+    top: 255.5px;
+    margin-left: 60px;
+    line-height: 0.8;
+    font-weight:bold;
+    color:white;
+}
+
+p.textesurpose{
+    position: absolute;
+    z-index: 2;
+    top: 434px;
+    margin-left: 60px;
+    font-style: normal;
+    color: white;
+    font-size: x-large;
+}
 /* Footer */
 footer {
     width: 100%;
