@@ -25,7 +25,7 @@ setInterval(function(){
 }, 1);
 
 
-// Anim texte avis
+// Animation textes avis
 const avis1 = document.querySelector('#avis1-texte');
 const avis2 = document.querySelector('#avis2-texte');
 const avis3 = document.querySelector('#avis3-texte');
@@ -57,9 +57,9 @@ var typewriter = new Typewriter(avis3, {
     loop: true
  });
 
-    typewriter.typeString("\"J’ai adoré être client\"")
-        .pauseFor(2000)
-        .deleteAll()
-        .typeString("\"Un accueil incroyable\"")
-        .pauseFor(1000)
-        .start();
+typewriter.typeString("\"J’ai adoré être client\"")
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString("\"Un accueil incroyable\"")
+    .pauseFor(1000)
+    .start();
