@@ -88,15 +88,15 @@ button {
 /* Header */
 header {
     width: 100vw;
-    height: 6vw;
-    padding: 0px 11.45vw;
+    height: 5.23vw;
+    padding: 0px 4.69vw;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
 }
 
 /* Image */
@@ -106,12 +106,13 @@ header .container {
 }
 
 header .container img {
-    width: 100%;
+    width: 110%;
     position: absolute;
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 50%);
 }
+
 
 /* Navigation links */
 header ul li a {
@@ -132,12 +133,130 @@ header ul li a:hover, header ul li a.active:hover {
 header ul li a.active {
     border-bottom: 4px solid black;
 }
+/* PremierePartie */
+/* ContenuVideo */
+.video{
+    width: 100%;
+    position: relative;
+}
+.video video {
+    z-index: 1;
+    width: 100%;
+}
+video::-webkit-media-controls {
+    display:none !important;
+  }
 
+h1.textesurpose{
+    position: absolute;
+    z-index: 2;
+    top: 255.5px;
+    margin-left: 60px;
+    line-height: 0.8;
+    font-weight:bold;
+    color:white;
+}
+
+p.textesurpose{
+    position: absolute;
+    z-index: 2;
+    top: 434px;
+    margin-left: 60px;
+    font-style: normal;
+    color: white;
+    font-size: x-large;
+}
+/* FinPremierePartie */
+/* DeuxièmePartie */
+.container_hover{
+    position: relative;
+    background-color:#F0F2EF;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 56.17vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center ;
+}
+.text_body_left{
+    position: absolute;
+    left: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body_right{
+    position: absolute;
+    right: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body:hover{
+    font-weight: 200%;
+}
+.container_hover_left{
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color: purple;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+}
+    .container_hover_left:hover{
+            opacity: 100%;
+            width: 55vw;
+    }
+h3.container_hover_left{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+
+.container_hover_right{
+    position: absolute;
+    right: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color:yellow;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+    right: 0;
+}
+.container_hover_right:hover{
+    opacity: 100%;
+    width: 55%;
+    right: 5px;
+}
+h3.container_hover{
+    width: 100%;
+    height: 9.5%;
+    line-height: 0.9;
+    text-align: center;
+    top: 135px;
+    z-index: 2;
+}
+h3.container_hover_right{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+/* FinDeuxièmePartie */
 /* Footer */
 footer {
     width: 100%;
     padding: 3vw 11.45vw;
     background-color: rgb(17, 17, 17);
+    position: relative;
+    bottom: 0px;
 }
 
 /* Liens */

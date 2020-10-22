@@ -1,3 +1,191 @@
+/* PremiereSection */
+/* ContenuVideo */
+.video{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-content: center;
+    /* justify-content: space-between; */
+}
+.video video {
+    z-index: 1;
+    width: 100%;
+    margin-top:3%;
+}
+video::-webkit-media-controls {
+    display:none !important;
+  }
+
+h1.textesurpose{
+    position: absolute;
+    z-index: 2;
+    margin-top: 15%;
+    margin-left: 60px;
+    line-height: 0.8;
+    font-weight:bold;
+    color:white;
+}
+
+p.textesurpose{
+    position: absolute;
+    z-index: 2;
+    margin-top: 25%;
+    margin-left: 60px;
+    font-style: normal;
+    color: white;
+    font-size: x-large;
+}
+/* FinPremiereSection */
+/* DeuxièmeSection */
+.container_hover{
+    position: relative;
+    background-color:#F0F2EF;
+    width: 100%;
+    height: 50vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.text_body_left{
+    position: absolute;
+    left: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body_right{
+    position: absolute;
+    right: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body:hover{
+    font-weight: 200%;
+}
+.container_hover_left{
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color: purple;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+}
+.container_hover_left:hover{
+    opacity: 100%;
+    width: 55vw;
+}
+h3.container_hover_left{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+
+.container_hover_right{
+    position: absolute;
+    right: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color:yellow;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+    right: 0;
+}
+.container_hover_right:hover{
+    opacity: 100%;
+    width: 55%;
+    right: 5px;
+}
+h3.container_hover{
+    margin-top: 9.21vw;
+    width: 100%;
+    height: 9.5%;
+    line-height: 0.9;
+    text-align: center;
+    z-index: 2;
+    order: 1;
+}
+h3.container_hover_right{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+.vertical-line{
+    margin-bottom: 10vw;
+    border-left: 4px solid #000;
+    height: 20vw;
+    order: 2;
+  }
+/* FinDeuxièmeSection */
+/* SectionMotos */
+.container_motos{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.container_motos h2{
+    font-weight: bold;
+    line-height: 0.9;
+    margin-top: 10vw;
+}
+.text_left{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 2s;
+}
+.text_right{
+    position: absolute;
+    right:50%;
+    transform: translate(50%);
+    transition: 2s;
+}
+.overlay_container_moto{
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 1%);
+    width: 100%;
+}
+.overlay_container_moto img {
+    height: 100%;
+    width: 100%;
+    /* filter: blur(3px); */
+    z-index: 2;
+}
+.overlay_container_moto h2{
+    color: white;
+    z-index: 200;
+}
+.container_motos_button{
+    margin-top: 25vw;
+    position:absolute;
+    z-index: 100;
+}
+/* FinSectionMotos */
+/* Footer */
+footer {
+    width: 100%;
+    padding: 3vw 11.45vw;
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    bottom: 0px;
+}
 /* Frank section */
 section.first {
     padding-top: 10vw;
