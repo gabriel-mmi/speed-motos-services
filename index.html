@@ -5,13 +5,15 @@
         <meta name=‘’description’’ content=’’Découvrez notre garage Speed Motos Services, experts depuis plus de 30 ans. Réparation Moto. Concessionnaire Moto et Royal-Enfield. Equipement Moto.’’><!-- MODIF -->
         <title>Garage Speed Motos Services à Bordeaux</title> <!-- MODIF -->
         <link rel="icon" href="assets/images/icons/favicon.ico" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/commons.css">
+        <link rel="stylesheet" href="css/index.css">
+
     </head>
     <body>
-
-        <header>
-            <div class="container"><img src="assets/images/icons/logo.png" alt="’’Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services"></div><!-- MODIF -->
-            <ul class="flex between">
+        <style type="text/css">@import url("css/header.css");</style>
+        <header class="container flex between">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt=""></div>
+            <ul class="container flex between">
                 <li><a class="active" href="index.html">Accueil</a></li>
                 <li><a href="boutique.html">Boutique</a></li>
                 <li><a href="#">Devis</a></li>
@@ -33,10 +35,25 @@
                 Découvrez son histoire.
                 </p>
                 <a href="apropos.html"><button class="favorite styled" type="button"><p>En savoir plus</p><img class="fleche" src="assets/images/icons/fleche.png" alt=""></button></a>
+        <!-- Bouton qui suis le scroll -->
+        <div class="fixed-devis-button" id="devis-button">
+            <a href="boutique.html"><img src="https://picsum.photos/id/90/90" alt="Liens vers la page devis"></a>
         </div>
 
-        <!-- Avis -->
+        <!-- About section -->
+        <section class="first">
+            <img src="assets/images/moto1.jpg" alt="" class="section-bg">
+            <div class="container grid">
+                <img src="assets/images/franck.jpg" alt="">
+                <div class="container text">
+                    <h3>FRANCK, NOTRE CHEF DE GARAGE :</h3>
+                    <p>Mollit id proident eiusmod mollit. Velit nostrud labore amet consectetur voluptate sit. Lorem nisi ipsum veniam culpa quis aliqua magna aute sit amet dolore enim ad est. In commodo cillum elit eu tempor et deserunt minim occaecat dolor dolore dolore ad. Eiusmod reprehenderit tempor exercitation esse anim deserunt sunt eiusmod aliqua ipsum labore qui non. Ullamco nulla adipisicing qui in.</p>
+                    <button class="button classic"><a href="apropos.html">Texte du bouton<img src="assets/images/icons/fleche.png" alt=""></a></button>
+                </div>
+            </div>
+        </section>
 
+        <!-- Avis -->
         <div class="avis_container">
             <h2 class="titre_avis">LES DERNIERS AVIS CLIENTS</h2>
             <ul class="avis">
@@ -48,19 +65,20 @@
 
         <!--  -->
 
+        <style type="text/css">@import url("css/footer.css");</style>
         <footer>
-            <ul class="flex between">
+            <ul class="container flex between links">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Contactez-nous</a></li>
                 <li><a href="#">Demander un devis</a></li>
                 <li><a href="#">Boutique</a></li>
                 <li><a href="#">Nos motos</a></li>
             </ul>
-            <div class="container flex">
+            <div class="container flex sign">
                 <img src="assets/images/icons/logo.png" alt="">
                 <p>Speed moto services</p>
            </div>
-           <ul class="flex center politics">
+           <ul class="container flex center politics">
                <li><a href="#">Politique de confidentialité</a></li>
                <li>-</li>
                <li><a href="#">Utilisation des cookies</a></li>
@@ -79,5 +97,5 @@
         </footer>
 
     </body>
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
 </html>
