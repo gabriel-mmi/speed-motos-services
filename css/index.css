@@ -5,9 +5,10 @@ section.first {
     color: white;
 }
 
-.container.text h3 {
+.container.text h2 {
     border-top: 4px solid white;
     padding-top: 10px;
+    font-size: 3vw;
 }
 
 section.first .container.grid {
@@ -83,66 +84,49 @@ section.first .container.text {
 }
 
 /* Section avis */
-.avis_container {
-    width: auto;
-    height: 530px;
-    background-color: #F0F2EF;
-    position: relative;
+section.avis {
+    width: 100%;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    background-color: white;
+    padding-top: 4vw;
 }
 
-.titre_avis {
-    font-size: 36px;
-    color: black;
-    display: block;
-    width: auto;
+section.avis h2 {
     text-align: center;
-    padding-top: 100px;
+    margin-bottom: 7vw;
 }
 
-.avis_container ul {
-    width: auto;
-    height: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+section.avis ul li {
+    width: 150px;
 }
 
-.cercle {
-    width: 15vh;
-    height: 15vh;
-    border-radius: 7.5vh;
-    background-color: white;   
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.438);
-    background-position : 50% 50%;
-    background-size : contain;
-    /* position: relative; */
+section.avis .icon {
+    width: 70%;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.308);
 }
 
-.cercle.un {
-    background-image: url(../assets/images/icons/moto-icon1.png);
+section.avis img {
+    margin-bottom: 20px;
 }
 
-.cercle.deux {
-    background-image: url(../assets/images/icons/moto-icon2.png);
+section.avis p {
+    text-align: center;
 }
 
-.cercle.trois {
-    background-image: url(../assets/images/icons/moto-icon3.png);
-}
 
-.etoiles {
-    margin-top: 10px;
-    width: 120px;
-    height: 30px;
-    background-image: url(../assets/images/icons/etoile.png);
-    background-size : 20%;
-}
-
+/* Bouton flottant */
 .fixed-devis-button {
     position: absolute;
     z-index: 10;
     right: 100px;
     top: 80%;
+}
+
+.fixed-devis-button img {
+    border-radius: 100%;
 }
 
 .fixed-devis-button a {

@@ -1,17 +1,21 @@
 /* Polices */
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-Roman.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-Roman.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
     font-weight: bold;
 }
 
 /* Styles */
+html {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0;
     padding: 0;
