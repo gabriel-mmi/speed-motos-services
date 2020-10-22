@@ -6,29 +6,34 @@
         <title>Garage Speed Motos Services à Bordeaux</title> <!-- MODIF -->
         <link rel="icon" href="assets/images/icons/favicon.ico" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/commons.css">
     </head>
     <body>
-
-        <header>
-
-            <div class="container"><img src="assets/images/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services"></div><!-- MODIF -->
-
-            <div class="container"><img src="assets/images/icons/logo.png" alt=""></div>
-
-            <ul class="flex between">
-                <li><a class="active" href="index.html">Accueil</a></li>
-                <li><a href="boutique.html">Boutique</a></li>
-                <li><a href="#">Devis</a></li>
-                <li><a href="apropos.html">Contact</a></li>
-            </ul>
-        </header>
 
         <!-- MODIF à partir d'ici-->
         <!-- Contenu -->
 
         <div class="formulaire">
             <ul id="steps">
-                <li><div class="questionsform">
+                
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">Quand souhaitez vous ...</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux jours</button>
+                            <button class="btn-choix">Dans deux jours</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux jours</button>
+                            <button class="btn-choix">Dans deux jours</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Texte du bouton<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <!-- <li><div class="questionsform">
                     <p>QUAND SOUHAITEZ-VOUS FAIRE RÉPARER VOTRE MOTO ?</p>
                     <input type="checkbox" id="quest1-reponse-1" name="reponse-1" />
                     <label for="quest1-reponse-1">Réponse 1</label>
@@ -64,7 +69,7 @@
                 <li><div class="questionsform">
                     <p>NOUS AURIONS BESOIN DE VOTRE ADRESSE-MAIL POUR VOUS FAIRE UN RETOUR DANS LES PLUS BREFS DÉLAIS.</p>
                     </div>
-                </li>
+                </li> -->
 
             </ul>
            
@@ -78,52 +83,8 @@
 
  
 
-        <div id="myProgress">
-            <div id="myBar"></div>
-          </div>
-          
-          <br>
-          <button onclick="move()">Clique</button> 
-
-
-          <div class="image">
-            
-
-          </div>
-
-
-        <!-- fin MODIF -->
-        <footer>
-            <ul class="flex between">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Contactez-nous</a></li>
-                <li><a href="#">Demander un devis</a></li>
-                <li><a href="#">Boutique</a></li>
-                <li><a href="#">Nos motos</a></li>
-            </ul>
-            <div class="container flex">
-                <img src="assets/images/icons/logo.png" alt="">
-                <p>Speed moto services</p>
-           </div>
-           <ul class="flex center politics">
-               <li><a href="#">Politique de confidentialité</a></li>
-               <li>-</li>
-               <li><a href="#">Utilisation des cookies</a></li>
-               <li>-</li>
-               <li><a href="#">Conditions d'utilisation</a></li>
-               <li>-</li>
-               <li><a href="#">Plan du site</a></li>
-               <li>-</li>
-               <li><a href="#">Informations commerciales</a></li>
-               <li>-</li>
-               <li><a href="#">Préferences</a></li>
-               <li>-</li>
-               <li><a href="#">Cookies</a></li>
-           </ul>
-           <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
-        </footer>
 
     </body>
-    <script src="script.js"></script>
+    <script src="js/formulaire.js"></script>
     <!-- Modif-->
 </html>
