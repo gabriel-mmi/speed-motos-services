@@ -27,12 +27,6 @@ p, a {
 }
 
 
-}
-
-
-
-
-
 a {
     cursor: pointer;
 }
@@ -623,6 +617,8 @@ button p {
     background-color: yellow;
   }
 
-  .image {
-      
+  .questionsform {
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    position: absolute;
   }
