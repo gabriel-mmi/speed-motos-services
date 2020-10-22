@@ -23,11 +23,19 @@ p, a {
     font-size: 1.25vw;
     text-decoration: none;
     color: black;
+    
 }
+
 
 a {
     cursor: pointer;
 }
+
+
+a {
+    cursor: pointer;
+}
+
 
 ul {
     list-style: none;
@@ -415,9 +423,9 @@ section {
     width: auto;
     height: 100vh;
     background-image: url(assets/images/motoHP1.jpg);
-    background-repeat: no-repeat;
+    background-repeat: round space;
     background-size: 100%;
-    background-position: center;
+    /* background-position: center; */
 }
 
 .a_propos {
@@ -481,6 +489,12 @@ button p {
     position: absolute;
 }
 
+.franck_image img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
 /* Avis Homepage */
 
 .avis_container {
@@ -499,10 +513,43 @@ button p {
     padding-top: 100px;
 }
 
-.avis_container ul li {
-    display: inline-block;
-    margin-top: 20vh;
-    margin-left: 24vw;
+.avis_container ul {
+    width: auto;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cercle {
+    width: 15vh;
+    height: 15vh;
+    border-radius: 7.5vh;
+    background-color: white;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.438);
+    background-position : 50% 50%;
+    background-size : contain;
+    /* position: relative; */
+}
+
+.cercle.un {
+    background-image: url(assets/images/icons/moto-icon1.png);
+}
+
+.cercle.deux {
+    background-image: url(assets/images/icons/moto-icon2.png);
+}
+
+.cercle.trois {
+    background-image: url(assets/images/icons/moto-icon3.png);
+}
+
+.etoiles {
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    background-image: url(assets/images/icons/etoile.png);
+    background-size : 20%;
 }
 
 /* Liste des articles */
@@ -548,3 +595,30 @@ button p {
     margin-top: 25px;
 }
 
+/*Modifs a partir d'ici de moi adel gloire à moi*/
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #307CFF;
+  }
+
+  #section1 {
+    height: 600px;
+    background-color: pink;
+  }
+  
+  #section2 {
+    height: 600px;
+    background-color: yellow;
+  }
+
+  .questionsform {
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    position: absolute;
+  }

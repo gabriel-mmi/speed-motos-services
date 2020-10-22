@@ -10,7 +10,11 @@
     <body>
 
         <header>
+
+            <div class="container"><img src="assets/images/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services"></div><!-- MODIF -->
+
             <div class="container"><img src="assets/images/icons/logo.png" alt=""></div>
+
             <ul class="flex between">
                 <li><a class="active" href="index.html">Accueil</a></li>
                 <li><a href="boutique.html">Boutique</a></li>
@@ -19,20 +23,76 @@
             </ul>
         </header>
 
+        <!-- MODIF à partir d'ici-->
         <!-- Contenu -->
-<
+
         <div class="formulaire">
             <ul id="steps">
-                <li><div>
-                    
-                </div></li>
+                <li><div class="questionsform">
+                    <p>QUAND SOUHAITEZ-VOUS FAIRE RÉPARER VOTRE MOTO ?</p>
+                    <input type="checkbox" id="quest1-reponse-1" name="reponse-1" />
+                    <label for="quest1-reponse-1">Réponse 1</label>
+                    <input type="checkbox" id="quest1-reponse-2" name="reponse-2" />
+                    <label for="quest1-reponse-2">Réponse 2</label>
+                    <input type="checkbox" id="quest1-reponse-3" name="reponse-3" />
+                    <label for="quest1-reponse-3">Réponse 3</label>
+                    <input type="checkbox" id="quest1-reponse-4" name="reponse-4" />
+                    <label for="quest1-reponse-4">Réponse 4</label>
+                   </div>
+                </li>
+
+                <li><div class="questionsform">
+                    <p>QU'EST-CE QUI DOIT ÊTRE RÉPARÉ ?</p>
+                    </div>
+                </li>
+
+                <li><div class="questionsform">
+                    <p>COMBIEN DE KILOMÈTRES A VOTRE VÉHICULE ?</p>
+                    </div>
+                </li>
+
+                <li><div class="questionsform">
+                    <p>QUELLE EST L'ANNÉE DE VOTRE VÉHICULE, SA MARQUE ET SON MODÈLE ?</p>
+                    </div>
+                </li>
+
+                <li><div class="questionsform">
+                    <p>Y A-T-IL AUTRE CHOSE QUE NOUS DEVRIONS SAVOIR ?</p>
+                    </div>
+                </li>
+
+                <li><div class="questionsform">
+                    <p>NOUS AURIONS BESOIN DE VOTRE ADRESSE-MAIL POUR VOUS FAIRE UN RETOUR DANS LES PLUS BREFS DÉLAIS.</p>
+                    </div>
+                </li>
+
             </ul>
-            <img src="assets/images/fond_formulaire_blur.png" alt="’’Modèle 3D en niveaux de gris d’un formulaire avec un léger flou.">
-            <button type="button" style="vertical-align:middle" class="form_button"><span>Commencer un Devis </span></button>
+           
         </div>
 
-        <!--  -->
 
+            <!-- <div class="formulaire">
+                <img src="assets/images/fond_formulaire_blur.png" alt="Modèle 3D en niveaux de gris d’un formulaire avec un léger flou.">
+                <button type="button" style="vertical-align:middle" class="form_button"><span>Commencer un Devis </span></button>
+            </div> -->
+
+ 
+
+        <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          
+          <br>
+          <button onclick="move()">Clique</button> 
+
+
+          <div class="image">
+            
+
+          </div>
+
+
+        <!-- fin MODIF -->
         <footer>
             <ul class="flex between">
                 <li><a href="#">Accueil</a></li>
@@ -65,4 +125,5 @@
 
     </body>
     <script src="script.js"></script>
+    <!-- Modif-->
 </html>
