@@ -7,30 +7,27 @@
         <link rel="icon" href="assets/images/icons/favicon.ico" />
         <link rel="stylesheet" href="css/commons.css">
         <link rel="stylesheet" href="css/index.css">
-
     </head>
     <body>
+        
+        <!-- Header -->
         <style type="text/css">@import url("css/header.css");</style>
-        <header class="container flex between">
+        <header class="container flex between" id="header">
             <div class="icon-container"><img src="assets/images/icons/logo.png" alt=""></div>
             <ul class="container flex between">
                 <li><a class="active" href="index.html">Accueil</a></li>
                 <li><a href="boutique.html">Boutique</a></li>
-                <li><a href="#">Devis</a></li>
+                <li><a href="#avis">Devis</a></li>
                 <li><a href="apropos.html">Contact</a></li>
             </ul>
         </header>
+        <script src="js/header.js"></script>
 
         <!-- Contenu -->
-
-            <div class="formulaire">
-                <img src="assets/images/fond_formulaire_blur.png" alt="’’Modèle 3D en niveaux de gris d’un formulaire avec un léger flou.">
-                <button type="button" style="vertical-align:middle" class="form_button"><span>Commencer un Devis </span></button>
-            </div>
             
-        <!-- Bouton qui suis le scroll -->
+        <!-- Boutton qui suis le scroll -->
         <div class="fixed-devis-button" id="devis-button">
-            <a href="boutique.html"><img src="https://picsum.photos/id/90/90" alt="Liens vers la page devis"></a>
+            <a href="#avis"><img src="assets/images/btn-form.gif" alt="Liens vers la page devis"></a>
         </div>
 
         <!-- About section -->
@@ -50,14 +47,14 @@
         </section>
 
         <!-- Avis -->
-        <div class="avis_container">
-            <h2 class="titre_avis">LES DERNIERS AVIS CLIENTS</h2>
-            <ul class="avis">
-                <li class="avis1"><div class="cercle un"></div><div class="etoiles"></div><p>"J'adore Franck"</p></li>
-                <li class="avis2"><div class="cercle deux"></div><div class="etoiles"></div><p>"Un merveilleux garage"</p></li>
-                <li class="avis3"><div class="cercle trois"></div><div class="etoiles"></div><p>"J’ai adoré être client"</p></li>
+        <section class="avis" id="avis">
+            <h2>LES DERNIERS AVIS CLIENTS</h2>
+            <ul class="container flex around">
+                <li><div class="container center"><img src="assets/images/icons/moto-icon1.png" class="icon" alt=""></div><img src="assets/images/icons/etoile.png" alt=""><p>"J'adore Franck"</p></li>
+                <li><div class="container center"><img src="assets/images/icons/moto-icon2.png" class="icon" alt=""></div><img src="assets/images/icons/etoile.png" alt=""><p>"Un merveilleux garage"</p></li>
+                <li><div class="container center"><img src="assets/images/icons/moto-icon3.png" class="icon" alt=""></div><img src="assets/images/icons/etoile.png" alt=""><p>"J'ai adoré etre client"</p></li>            
             </ul>
-        </div>
+        </section>
 
         <!--  -->
 

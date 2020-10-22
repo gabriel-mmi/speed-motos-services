@@ -16,6 +16,7 @@ section.first .container.grid {
 }
 
 section.first .container.text, section.first .container.text p {
+    padding: 0;
     color: white;
 }
 
