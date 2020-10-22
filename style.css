@@ -558,3 +558,28 @@ button p {
     margin-top: 25px;
 }
 
+/*Modifs a partir d'ici de moi adel gloire à moi*/
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #307CFF;
+  }
+
+  #section1 {
+    height: 600px;
+    background-color: pink;
+  }
+  
+  #section2 {
+    height: 600px;
+    background-color: yellow;
+  }
+
+  .image {
+      
+  }

@@ -1,0 +1,90 @@
+/* Galerie d'images */
+.galerie {
+    width: 50%;
+    margin: 5vw auto;
+    position: relative;
+}
+
+/* Images list */
+.galerie .images li img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.galerie .images li:not(.active) {
+    display: none;
+}
+
+.galerie .ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Arrows */
+.galerie .ui .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.438);
+    width: 2.1vw;
+    height: 2.1vw;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.galerie .ui .arrow img {
+    width: 1.1vw;
+    position: absolute;
+    top: 25%;
+}
+
+.galerie .ui .arrow.right {
+    right: -2.5%;
+}
+
+.galerie .ui .arrow.right img {
+    transform: rotate(270deg);
+    right: 25%;
+
+}
+
+.galerie .ui .arrow.left {
+    left: -2.5%;
+}
+
+.galerie .ui .arrow.left img {
+    transform: rotate(90deg);
+    left: 25%;
+}
+
+/* User interface */
+.galerie .ui ul {
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.galerie .circle {
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.galerie .circle.active {
+    background-color: white;
+}
+
+.galerie .circle:not(:last-child) {
+    margin-right: 1vw;
+}

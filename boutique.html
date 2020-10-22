@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <title>Boutique - Speed moto services</title>
         <link rel="icon" href="assets/images/icons/favicon.ico"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/commons.css">
+        <link rel="stylesheet" href="css/boutique.css">
     </head>
     <body>
-
-        <header>
-            <div class="container"><img src="assets/images/icons/logo.png" alt=""></div>
-            <ul class="flex between">
+        <style type="text/css">@import url("css/header.css");</style>
+        <header class="container flex between">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt=""></div>
+            <ul class="container flex between">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a class="active" href="boutique.html">Boutique</a></li>
                 <li><a href="#">Devis</a></li>
@@ -22,7 +23,7 @@
 
         <!-- Séléction d'articles en haut de page -->
         <div class="categories">
-            <ul class="flex center">
+            <ul class="container flex center">
                 <li><a onclick="OnSelectShopCategory('casques')"><img src="assets/images/icons/casque-icon.png" alt=""><p>Casques</p></a></li>
                 <li><a onclick="OnSelectShopCategory('gants')"><img src="assets/images/icons/gants-icon.png" alt=""><p>Gants</p></a></li>
                 <li><a onclick="OnSelectShopCategory('vestes')"><img src="assets/images/icons/veste-icon.png" alt=""><p>Vestes</p></a></li>
@@ -30,6 +31,7 @@
         </div>
 
         <!-- Galerie lorsque aucun item n'est séléctionné -->
+        <style type="text/css">@import url("css/galerie.css");</style>
         <div class="galerie" id ="galerie">
             <ul class="images" id="galerie-images">
                 <li class="active"><img src="assets/images/veste (1).jpg" alt=""></li>
@@ -39,7 +41,7 @@
             <div class="ui">
                 <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/icons/arrow.svg" alt=""></button>
                 <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/icons/arrow.svg" alt=""></button>
-                <ul class="flex center" id="circles">
+                <ul class="container flex center" id="circles">
                     <button class="circle active"></button>
                     <button class="circle"></button>
                     <button class="circle"></button>
@@ -50,35 +52,35 @@
         <div class="articles-list" id="articles-list">
             <!-- Articles dans la categorie "Casques" -->
             <ul id="casques">
-                <li><div class="article-item">
+                <li><div class="container grid container grid article-item">
                     <img src="assets/images/casque (1).png" alt="">
-                    <div class="textes">
+                    <div class="container text">
                         <h3>Casque Royal Enfield</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>Casque Royal Enfield</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                     <img src="assets/images/casque (2).jpg" alt="">
                 </div></li>
-                <li><div class="article-item">
+                <li><div class="container grid article-item">
                     <img src="assets/images/casque (3).jpg" alt="">
-                    <div class="textes">
+                    <div class="container text">
                         <h3>Casque Royal Enfield</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>Casque Royal Enfield</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                     <img src="assets/images/casque (4).jpg" alt="">
                 </div></li>
@@ -86,35 +88,35 @@
 
             <!-- Articles dans la categorie "Gans" -->
             <ul id="gants">
-                <li><div class="article-item">
+                <li><div class="container grid article-item">
                     <img src="assets/images/gants (1).png" alt="">
-                    <div class="textes">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                     <img src="assets/images/gants (2).png" alt="">
                 </div></li>
-                <li><div class="article-item">
+                <li><div class="container grid article-item">
                     <img src="assets/images/gants (3).jpg" alt="">
-                    <div class="textes">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                     <img src="assets/images/gants (4).jpg" alt="">
                 </div></li>
@@ -122,56 +124,57 @@
 
             <!-- Articles dans la categorie "Vestes" -->
             <ul id="vestes">
-                <li><div class="article-item">
-                    <img src="/assets/images/veste (1).jpg" alt="">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <img src="assets/images/veste (1).jpg" alt="">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
-                    <img src="/assets/images/veste (2).jpg" alt="">
+                    <img src="assets/images/veste (2).jpg" alt="">
                 </div></li>
-                <li><div class="article-item">
-                    <img src="/assets/images/veste (3).jpg" alt="">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <img src="assets/images/veste (3).jpg" alt="">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
                 </div></li>
-                <li><div class="article-item">
-                    <div class="textes">
+                <li><div class="container grid article-item">
+                    <div class="container text">
                         <h3>TITRE</h3>
                         <p>Veniam pariatur cupidatat mollit duis quis duis laborum commodo sit amet aliquip. Do ipsum qui voluptate nostrud consectetur in laborum mollit voluptate ad eiusmod voluptate. Et velit laboris ut veniam elit pariatur sunt pariatur ullamco culpa pariatur laboris. Reprehenderit nisi sint sit cupidatat in culpa ex sit incididunt dolor fugiat esse minim.</p>
-                        <button>19$</button>
+                        <button class="button shop"><p>Acheter</p><p>19$</p></button>
                     </div>
-                    <img src="/assets/images/veste (4).png" alt="">
+                    <img src="assets/images/veste (4).png" alt="">
                 </div></li>
             </ul>
         </div>
 
         <!--  -->
 
+        <style type="text/css">@import url("css/footer.css");</style>
         <footer>
-            <ul class="flex between">
+            <ul class="container flex between links">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Contactez-nous</a></li>
                 <li><a href="#">Demander un devis</a></li>
                 <li><a href="#">Boutique</a></li>
                 <li><a href="#">Nos motos</a></li>
             </ul>
-            <div class="container flex">
-                <img src="assets/images/logo.png" alt="">
+            <div class="container flex sign">
+                <img src="assets/images/icons/logo.png" alt="">
                 <p>Speed moto services</p>
            </div>
-           <ul class="flex center politics">
+           <ul class="container flex center politics">
                <li><a href="#">Politique de confidentialité</a></li>
                <li>-</li>
                <li><a href="#">Utilisation des cookies</a></li>
@@ -190,5 +193,5 @@
         </footer>
 
     </body>
-    <script src="script.js"></script>
+    <script src="js/boutique.js"></script>
 </html>
