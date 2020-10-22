@@ -1,3 +1,11 @@
+/*Polices*/
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../assets/fonts/HelveticaNeueLTStd-Ex.otf");
+    font-weight: normal;
+}
+
 /* Categories en haut de l'écran */
 .categories {
     width: 100%;
@@ -60,4 +68,11 @@
 
 .article-item .container.text .button {
     margin-top: 2vw;
+}
+
+/*containers*/
+
+.container.text {
+    font-family: "HelveticaNeue";
+    font-weight: normal;
 }
