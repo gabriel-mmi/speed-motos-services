@@ -58,6 +58,10 @@ ul {
     list-style: none;
 }
 
+.center {
+    text-align: center;
+}
+
 /* Sections */
 section {
     width: 100%;
@@ -108,8 +112,8 @@ section img.section-bg {
 }
 
 .container.text {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    /* padding-top: 1vw;
+    padding-bottom: 1vw; */
 }
 
 .container.center {
@@ -119,7 +123,7 @@ section img.section-bg {
 /* Boutons */
 .button {
     position: relative;
-    width: 250px;
+    width: 320px;
     height: 70px;
     padding: 20px;
     display: flex;
@@ -127,21 +131,22 @@ section img.section-bg {
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 100%;
+    font-size: 115%;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .button img {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 3%;
     transform: translate(-50%, -50%);
     width: 11%;
     transition: right 0.3s;
 }
 
 .button:hover img {
-    right: 5%;
+    right: 0%;
 }
 
 /* 3 differents types */

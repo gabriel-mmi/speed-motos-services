@@ -1,44 +1,49 @@
-/* PremiereSection */
-/* ContenuVideo */
+/* Landing section */
 .video{
     width: 100%;
-    height: 1000px;
+    height: 95vh;
     background-color: black;
     position: relative;
-    display: flex;
-    align-content: center;
-    /* justify-content: space-between; */
+    z-index: 1;
 }
 .video video {
-    z-index: 1;
+    z-index:  -1;
     width: 100%;
     margin-top:3%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 video::-webkit-media-controls {
     display:none !important;
-  }
-
-h1.textesurpose{
-    position: absolute;
-    z-index: 2;
-    margin-top: 15%;
-    margin-left: 60px;
-    line-height: 0.8;
-    font-weight:bold;
-    color:white;
 }
 
-p.textesurpose{
-    position: absolute;
-    z-index: 2;
-    margin-top: 25%;
-    margin-left: 60px;
-    font-style: normal;
+.video .container.text {
+    z-index: 20;
     color: white;
-    font-size: x-large;
+    padding-top: 15vw;
+    padding-left: 11.45vw;
+    padding-right: 11.45vw;
 }
-/* FinPremiereSection */
-/* DeuxièmeSection */
+
+.video .container.text h1 {
+    line-height: 80px;
+}
+
+.video .container.text p {
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+
+.video button {
+    font-size: 90%;
+    margin-top: 7vw;
+}
+
+/* Nos service section */
 .container_hover{
     position: relative;
     background-color:#F0F2EF;
@@ -121,12 +126,8 @@ h3.container_hover_right{
     object-position: center;
     color: white;
 }
-.vertical-line{
-    margin-bottom: 10vw;
-    border-left: 4px solid #000;
-    height: 20vw;
-    order: 2;
-  }
+
+
 /* FinDeuxièmeSection */
 /* SectionMotos */
 .container_motos{
@@ -161,11 +162,10 @@ h3.container_hover_right{
     z-index: 5;
     background-color: rgba(0, 0, 0, 1%);
     width: 100%;
+    overflow: hidden;
 }
 .overlay_container_moto img {
-    height: 100%;
     width: 100%;
-    /* filter: blur(3px); */
     z-index: 2;
 }
 .overlay_container_moto h2{
@@ -177,38 +177,79 @@ h3.container_hover_right{
     position:absolute;
     z-index: 100;
 }
-/* FinSectionMotos */
-/* Footer */
-footer {
-    width: 100%;
-    padding: 3vw 11.45vw;
-    background-color: rgb(17, 17, 17);
-    position: relative;
-    bottom: 0px;
-}
-/* Frank section */
-section.first {
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+.container_motos_button button {
     color: white;
+}
+/* FinSectionMotos */
+
+/* Services */
+.services {
+    padding: 0;
+    position: relative;
+}
+
+.services h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.services .container.flex {
+    height: 60vw;
+}
+
+.services .container.flex .panel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 10%;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+.services .container.flex .panel:hover {
+    background-color: #F0F2EF;
+}
+
+.services .container.flex .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-line{
+    border-left: 2px solid rgba(0, 0, 0, 0.63);
+    height: 20vw;
+
+}
+
+/* A propos section */
+section.apropos {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    background-color: black;
 }
 
 .container.text h2 {
-    border-top: 4px solid white;
+    border-top: 4px solid rgb(255, 255, 255);
     padding-top: 10px;
-    font-size: 3vw;
+    font-size: 2.5vw;
+    color: white;
 }
 
-section.first .container.grid {
+section.apropos .container.grid {
     column-gap: 150px;
 }
 
-section.first p {
-    color: white;
+section.apropos p {
     margin-bottom: 1vw;
+    color: white;
 }
 
-section.first .container.text {
+section.apropos .container.text {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,19 +315,21 @@ section.first .container.text {
 /* Section avis */
 section.avis {
     width: 100%;
-    margin-top: 10vw;
     margin-bottom: 10vw;
-    background-color: white;
-    padding-top: 4vw;
+    background-color: #F0F2EF;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
 }
 
 section.avis h2 {
     text-align: center;
     margin-bottom: 7vw;
+    font-size: 36px;
 }
 
 section.avis ul li {
     width: 150px;
+    position: relative;
 }
 
 section.avis .icon {
@@ -301,7 +344,12 @@ section.avis img {
 }
 
 section.avis p {
+    position: absolute;
     text-align: center;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, 0%);
+    width: 180%;
 }
 
 
@@ -315,6 +363,7 @@ section.avis p {
 
 .fixed-devis-button img {
     border-radius: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .fixed-devis-button a {

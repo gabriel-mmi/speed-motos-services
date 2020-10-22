@@ -23,6 +23,8 @@ section.first .container.text, section.first .container.text p {
 /* Location section */
 .location .section-bg {
     opacity: 0.8;
+    width: auto;
+    height: 100%;
 }
 
 .location .float-parent {

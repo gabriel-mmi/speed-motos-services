@@ -6,11 +6,11 @@ const img= document.querySelector(".overlay_container_moto img");
 console.log(right);
 
 overlay.addEventListener("mouseover", function(){
-    left.style.left = "40%"
-    right.style.right= "40%"
-})
+    left.style.left = "40%";
+    right.style.right= "40%";
+});
 overlay.addEventListener("mouseout", function(){
 
-    left.style.left = "50%"
-    right.style.right= "50%"
-})
+    left.style.left = "50%";
+    right.style.right= "50%";
+});
