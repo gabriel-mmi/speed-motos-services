@@ -1,3 +1,12 @@
+/*Polices*/
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../assets/fonts/HelveticaNeueLTStd-Ex.otf");
+    font-weight: normal;
+}
+
+
 div {
     transition: opacity 0.4s;
 }
@@ -52,4 +61,12 @@ section.first .container.text, section.first .container.text p {
     position: absolute;
     top: 35vw;
     right: 15vw;
+}
+
+
+/*containers*/
+
+.container.text {
+    font-family: "HelveticaNeue";
+    font-weight: normal;
 }
