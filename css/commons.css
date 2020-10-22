@@ -122,6 +122,8 @@ section img.section-bg {
     align-items: center;
     border: none;
     cursor: pointer;
+    color: white;
+    font-size: 100%;
     transition: background-color 0.3s;
 }
 
@@ -132,11 +134,6 @@ section img.section-bg {
     transform: translate(-50%, -50%);
     width: 11%;
     transition: right 0.3s;
-}
-
-.button p, .button a {
-    color: white;
-    font-size: 145%;
 }
 
 .button:hover img {
