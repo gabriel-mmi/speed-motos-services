@@ -1,6 +1,8 @@
 const steps = document.getElementById("steps");
 var currentStep = 0;
 
+steps.children[0].style.display = "block";
+
 function NextFormStep () {
     if(currentStep < steps.children.length - 1) {
         console.log("next step");

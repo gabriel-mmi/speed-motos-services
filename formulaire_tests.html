@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr" >
+    <head>
+        <meta charset="utf-8">
+        <meta name=‘’description’’ content=’’Découvrez notre garage Speed Motos Services, experts depuis plus de 30 ans. Réparation Moto. Concessionnaire Moto et Royal-Enfield. Equipement Moto.’’><!-- MODIF -->
+        <title>Garage Speed Motos Services à Bordeaux</title> <!-- MODIF -->
+        <link rel="icon" href="assets/images/icons/favicon.ico" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/commons.css">
+    </head>
+    <body>
+
+        <!-- MODIF à partir d'ici-->
+        <!-- Contenu -->
+
+        <div class="formulaire">
+            <ul id="steps">
+                
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">QUAND SOUHAITEZ-VOUS FAIRE RÉPARER VOTRE MOTO ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux jours</button>
+                            <button class="btn-choix">Le semaine prochaine</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux semaines</button>
+                            <button class="btn-choix">Le mois prochain</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">QU'EST-CE QUI DOIT ÊTRE RÉPARÉ ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">La transmission</button>
+                            <button class="btn-choix">Le moteur</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Les freins</button>
+                            <button class="btn-choix">Je ne sais pas vraiment</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">COMBIEN DE KILOMÈTRES A VOTRE VÉHICULE ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">- de 50.000</button>
+                            <button class="btn-choix">Entre 50.000 et 100.000</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Entre 100.000 et 200.000</button>
+                            <button class="btn-choix">+ de 200.000</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">QUELLE EST L'ANNÉE DE VOTRE VÉHICULE, SA MARQUE ET SON MODÈLE ?</h3>
+                    <div class="choix">
+                        <div class="name-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">Y A-T-IL AUTRE CHOSE QUE NOUS DEVRIONS SAVOIR ?</h3>
+                    <div class="choix">
+                        <div class="savoir-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">VEUILLEZ ENTRER VOTRE ADRESSE E-MAIL</h3>
+                    <div class="choix">
+                        <div class="savoir-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>Réservation</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"></div></div>
+                    <h3 class="question">MERCI POUR VOTRE RÉSERVATION.<br>NOUS VOUS FERONS UN RETOUR DANS LES PLUS BREFS DÉLAIS.</h3>
+                    <div class="button-container-terminer"><button onclick="NextFormStep()" class="button classic">Terminer<img src="assets/images/icons/fleche.png" alt=""></button></div>
+                </div></li>
+                <!--
+                <li><div class="questionsform">
+                    <p>NOUS AURIONS BESOIN DE VOTRE ADRESSE-MAIL POUR VOUS FAIRE UN RETOUR DANS LES PLUS BREFS DÉLAIS.</p>
+                    </div>
+                </li> -->
+
+            </ul>
+           
+        </div>
+
+
+            <!-- <div class="formulaire">
+                <img src="assets/images/fond_formulaire_blur.png" alt="Modèle 3D en niveaux de gris d’un formulaire avec un léger flou.">
+                <button type="button" style="vertical-align:middle" class="form_button"><span>Commencer un Devis </span></button>
+            </div> -->
+
+ 
+
+
+    </body>
+    <script src="js/formulaire.js"></script>
+    <!-- Modif-->
+</html>
