@@ -16,11 +16,21 @@ html {
     scroll-behavior: smooth !important;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "HelveticaNeue";
+}
+
+main{
+    position: absolute;
+    top: 100vh;
+    z-index: -2;
 }
 
 /* Titres */
@@ -83,9 +93,9 @@ section img.section-bg {
 }
 
 /* Containers */
-.container {
+/* .container {
 
-}
+} */
 
 .container.flex {
     display: flex;
@@ -111,10 +121,10 @@ section img.section-bg {
     column-gap: 50px;
 }
 
-.container.text {
-    /* padding-top: 1vw;
-    padding-bottom: 1vw; */
-}
+/* .container.text {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+} */
 
 .container.center {
     text-align: center;
