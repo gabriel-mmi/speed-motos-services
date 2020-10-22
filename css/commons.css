@@ -1,17 +1,21 @@
 /* Polices */
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-Roman.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-Roman.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
     font-weight: bold;
 }
 
 /* Styles */
+html {
+    scroll-behavior: smooth !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -122,6 +126,8 @@ section img.section-bg {
     align-items: center;
     border: none;
     cursor: pointer;
+    color: white;
+    font-size: 100%;
     transition: background-color 0.3s;
 }
 
@@ -132,11 +138,6 @@ section img.section-bg {
     transform: translate(-50%, -50%);
     width: 11%;
     transition: right 0.3s;
-}
-
-.button p, .button a {
-    color: white;
-    font-size: 145%;
 }
 
 .button:hover img {

@@ -193,6 +193,12 @@ section.first {
     color: white;
 }
 
+.container.text h2 {
+    border-top: 4px solid white;
+    padding-top: 10px;
+    font-size: 3vw;
+}
+
 section.first .container.grid {
     column-gap: 150px;
 }
@@ -203,7 +209,9 @@ section.first p {
 }
 
 section.first .container.text {
-    border-top: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Formulaire */
@@ -264,33 +272,49 @@ section.first .container.text {
 }
 
 /* Section avis */
-.avis_container {
-    width: auto;
-    height: 530px;
-    background-color: #F0F2EF;
-    position: relative;
+section.avis {
+    width: 100%;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    background-color: white;
+    padding-top: 4vw;
 }
 
-.titre_avis {
-    font-size: 36px;
-    color: black;
-    display: block;
-    width: auto;
+section.avis h2 {
     text-align: center;
-    padding-top: 100px;
+    margin-bottom: 7vw;
 }
 
-.avis_container ul li {
-    display: inline-block;
-    margin-top: 20vh;
-    margin-left: 24vw;
+section.avis ul li {
+    width: 150px;
 }
 
+section.avis .icon {
+    width: 70%;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.308);
+}
+
+section.avis img {
+    margin-bottom: 20px;
+}
+
+section.avis p {
+    text-align: center;
+}
+
+
+/* Bouton flottant */
 .fixed-devis-button {
     position: absolute;
     z-index: 10;
     right: 100px;
     top: 80%;
+}
+
+.fixed-devis-button img {
+    border-radius: 100%;
 }
 
 .fixed-devis-button a {
