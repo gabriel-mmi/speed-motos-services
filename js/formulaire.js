@@ -5,7 +5,6 @@ steps.children[0].style.display = "block";
 
 function NextFormStep () {
     if(currentStep < steps.children.length - 1) {
-        console.log("next step");
         steps.children[currentStep].style.display = "none";
         currentStep++;
         steps.children[currentStep].style.display = "block";
