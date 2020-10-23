@@ -27,12 +27,6 @@ body {
     font-family: "HelveticaNeue";
 }
 
-main{
-    position: absolute;
-    top: 100vh;
-    z-index: -2;
-}
-
 /* Titres */
 h1 {
     font-size: 5.6vw;
