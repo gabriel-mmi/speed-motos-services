@@ -1,3 +1,4 @@
+
 // Bouton prise de devis
 const devisButton = document.getElementById("devis-button");
 const buttonSpeed = 0.2;
@@ -79,7 +80,7 @@ overlay.addEventListener("mouseout", function(){
 window.addEventListener("load", function () {
     setTimeout(() => {
         document.getElementById("landing-text").style.opacity = "1";
-    }, 2500);
+    }, 1700);
 });
 
 // Gestion des anims lors du scroll et du bouton flottant

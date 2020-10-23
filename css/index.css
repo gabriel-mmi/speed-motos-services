@@ -203,7 +203,9 @@ h3.container_hover_right{
 main{
     position: absolute;
     top: 102vh;
-    z-index: -2;
+    z-index: 2;
+    background-color: transparent;
+    pointer-events: none;
 }
 
 .services .container.flex .panel {
@@ -225,7 +227,6 @@ main{
 .vertical-line{
     border-left: 2px solid rgba(0, 0, 0, 0.63);
     height: 20vw;
-
 }
 
 /* A propos section */

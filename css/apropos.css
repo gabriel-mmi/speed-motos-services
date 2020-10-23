@@ -34,6 +34,11 @@ section.first .container.text, section.first .container.text p {
     color: white;
 }
 
+section.first .container.text a {
+    color: white;
+    text-decoration: underline;
+}
+
 /* Location section */
 .location .section-bg {
     opacity: 0.8;
