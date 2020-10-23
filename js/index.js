@@ -1,3 +1,4 @@
+
 // Bouton prise de devis
 const devisButton = document.getElementById("devis-button");
 const buttonSpeed = 0.2;

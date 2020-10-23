@@ -72,6 +72,6 @@ function OnSelectShopCategory (itemName) {
     for (let index = 0; index < document.getElementById(itemName).children.length; index++) {
         setTimeout(() => {
             document.getElementById(itemName).children[index].style.opacity = "1";
-        }, 100 * index);       
+        }, 200 * index);       
     }
 }
