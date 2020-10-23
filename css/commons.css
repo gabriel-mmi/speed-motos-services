@@ -11,6 +11,14 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    src: url("../assets/fonts/HelveticaNeueLTStd-MdEx.otf");
+    font-weight: normal;
+}
+
+
+
 /* Styles */
 html {
     scroll-behavior: smooth !important;
@@ -90,6 +98,10 @@ section img.section-bg {
 /* .container {
 
 } */
+.container h3{
+    font-family: "HelveticaNeueLTStd-MdEx";
+    font-weight: normal;
+}
 
 .container.flex {
     display: flex;
@@ -114,11 +126,6 @@ section img.section-bg {
     grid-template-rows: 1fr;
     column-gap: 50px;
 }
-
-/* .container.text {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-} */
 
 .container.center {
     text-align: center;

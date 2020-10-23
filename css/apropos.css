@@ -6,6 +6,11 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    src: url("../assets/fonts/HelveticaNeueLTStd-MdEx.otf");
+    font-weight: normal;
+}
 
 div {
     transition: opacity 0.4s;
@@ -74,6 +79,6 @@ section.first .container.text a {
 /*containers*/
 
 .container.text {
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeueLTStd-MdEx";
     font-weight: normal;
 }
