@@ -45,6 +45,7 @@ video::-webkit-media-controls {
 
 
 .video button {
+    width: 350px;
     font-size: 90%;
     margin-top: 7vw;
 }
@@ -203,6 +204,7 @@ h3.container_hover_right{
 main{
     position: absolute;
     top: 102vh;
+    z-index: -2;
     background-color: transparent;
     pointer-events: none;
 }

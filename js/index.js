@@ -98,18 +98,18 @@ window.addEventListener("scroll", function(e) {
     }
 
     // Fade in animations
-    if(scroll > 450 && scroll < 2040) {
+    if(scroll > 450 && scroll < 2100) {
         document.getElementById("services-title").style.opacity = "1";
         setTimeout(() => {
             document.getElementById("services-panel-left").style.opacity = "1";
             document.getElementById("services-panel-right").style.opacity = "1";
         }, 800);
-    }else if (scroll > 2040 && scroll < 3020) {
+    }else if (scroll > 2100 && scroll < 3500) {
         document.getElementById("apropos-title").style.opacity = "1";
         setTimeout(() => {
             document.getElementById("apropos-para").style.opacity = "1";
         }, 800);
-    }else if(scroll > 3020) {
+    }else if(scroll > 3500) {
         console.log("a");
         for (let index = 0; index < document.getElementById("avis-list").children.length; index++) {
             setTimeout(() => {
