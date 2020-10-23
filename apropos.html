@@ -9,38 +9,58 @@
     </head>
 
     <body>
+
+        <!-- Header -->
         <style type="text/css">@import url("css/header.css");</style>
-        <header class="container flex between">
-            <div class="icon-container"><img src="assets/images/icons/logo.png" alt=""></div>
-            <ul class="container flex between">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="boutique.html">Boutique</a></li>
-                <li><a href="#">Devis</a></li>
-                <li><a class="active" href="apropos.html">Contact</a></li>
-            </ul>
+        <header class="container flex between" id="header">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services."></div>
+            <nav>
+                <ul class="container flex between">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="index.html#formulaire">Devis</a></li>
+                    <li><a class="active" href="apropos.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+        <script src="js/header.js"></script>
 
         <!-- Contenu -->
 
+            <!-- Présentaion de Franck et de l'entreprise -->
             <section class="first">
                 <img src="assets/images/ellipse.svg" alt="" class="section-bg" style="top: 2.5vw;">
                 <div class="container grid" id="about-one">
-                    <img src="assets/images/franck.jpg" alt="">
+                    <img src="assets/images/franck.jpg" alt="Photo en plan américain du gérant du garage, Franck, en pleine activité de réparation.">
                     <div class="container text">
-                        <h2>Frank & co</h2>
-                        <p>Cupidatat est nulla cupidatat non dolor ipsum id in adipisicing excepteur pariatur labore. Adipisicing enim sunt excepteur labore quis ea eu occaecat pariatur ullamco consequat. Consequat exercitation ea elit qui ut ipsum officia. In irure labore officia non incididunt tempor. Nulla eu voluptate nisi sint sit fugiat.</p>
+                        <h2>FRANCK & CO:</h2>
+                        <p> SPEED MOTO SERVICES, <br>
+                            C’est une grande aventure débutée 
+                            en avril 2005 en famille. <br>
+                            <p>Venir à Speed Motos Services, c’est
+                            surtout apprendre et partager des moments 
+                            uniques avec toute l’équipe : Franck, Sandrine et Stéphane. </p><br>
+                            <p>Nous sommes très heureux d’accueillir jour après jour
+                            des clients toujours aussi fidèles depuis plus de 15 ans et <br>
+                            des nouveaux clients qui restent, jusqu’à ce jour, pleinement satisfaits de nos conseils et services. </p>
+                            </p>
                     </div>
                 </div>
             </section>
 
+            <!-- Présentation du lieu -->
             <section class="location">
-                <img src="assets/images/moto1.jpg" alt="" class="section-bg" style="z-index: -2;">
+                <img src="assets/images/motoHP1.jpg" alt="Image d'un motard montant sur une moto." class="section-bg" style="z-index: -2;">
                 <div class="float-parent" id="about-two">
                     <div class="container float">
                         <h3>Nous rencontrer</h3>
-                        <p>Id eu velit amet laboris qui consectetur cillum culpa non. Magna enim eiusmod tempor commodo tempor anim commodo. Qui et Lorem dolore dolor duis ad ut veniam magna ut incididunt sit cupidatat. Ex sint fugiat laborum culpa cillum id et veniam et mollit officia ut. Aute non commodo non veniam.</p>
+                        <p> ROYAL ENFIELD <br>
+                            Speed Motos Services est concessionnaire de motos Royal-Enfield <br> 
+                            depuis janvier 2006 et ceci ne s’est pas fait par hasard !
+                        </p>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.8142746457256!2d-0.579935784183631!3d44.78459158655205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527398a91c8a5%3A0xf584491228f2d71d!2s6%20Rue%20Jacques-Yves%20Cousteau%2C%2033140%20Villenave-d&#39;Ornon!5e0!3m2!1sfr!2sfr!4v1602859262940!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                </div>
+                </div>
             </section>
 
         <!--  -->
@@ -48,14 +68,14 @@
         <style type="text/css">@import url("css/footer.css");</style>
         <footer>
             <ul class="container flex between links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Contactez-nous</a></li>
-                <li><a href="#">Demander un devis</a></li>
-                <li><a href="#">Boutique</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">Contactez-nous</a></li>
+                <li><a href="index.html#devis">Demander un devis</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
                 <li><a href="#">Nos motos</a></li>
             </ul>
             <div class="container flex sign">
-                <img src="assets/images/icons/logo.png" alt="">
+                <img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services.">
                 <p>Speed moto services</p>
            </div>
            <ul class="container flex center politics">
@@ -75,6 +95,13 @@
            </ul>
            <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
         </footer>
+
+        <!-- Loading screen -->
+        <style type="text/css">@import url("css/loading.css");</style>
+        <div class="loading" id="loading">
+            <img src="assets/images/gif-anime.gif" alt="Animation de chargement de la page">
+        </div>
+        <script src="js/loading.js"></script>
 
     </body>
     <script src="js/apropos.js"></script>

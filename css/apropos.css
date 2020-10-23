@@ -1,3 +1,17 @@
+/*Polices*/
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../assets/fonts/HelveticaNeueLTStd-Ex.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    src: url("../assets/fonts/HelveticaNeueLTStd-MdEx.otf");
+    font-weight: normal;
+}
+
 div {
     transition: opacity 0.4s;
 }
@@ -16,12 +30,15 @@ section.first .container.grid {
 }
 
 section.first .container.text, section.first .container.text p {
+    padding: 0;
     color: white;
 }
 
 /* Location section */
 .location .section-bg {
     opacity: 0.8;
+    width: auto;
+    height: 100%;
 }
 
 .location .float-parent {
@@ -51,4 +68,12 @@ section.first .container.text, section.first .container.text p {
     position: absolute;
     top: 35vw;
     right: 15vw;
+}
+
+
+/*containers*/
+
+.container.text {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    font-weight: normal;
 }

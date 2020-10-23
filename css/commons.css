@@ -1,17 +1,33 @@
 /* Polices */
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-Roman.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-Roman.otf");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "HelveticaNeue";
-    src: url("assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
+    src: url("../assets/fonts/HelveticaNeueLTStd-BlkEx.otf");
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    src: url("../assets/fonts/HelveticaNeueLTStd-MdEx.otf");
+    font-weight: normal;
+}
+
+
+
 /* Styles */
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +70,10 @@ ul {
     list-style: none;
 }
 
+.center {
+    text-align: center;
+}
+
 /* Sections */
 section {
     width: 100%;
@@ -75,8 +95,12 @@ section img.section-bg {
 }
 
 /* Containers */
-.container {
+/* .container {
 
+} */
+.container h3{
+    font-family: "HelveticaNeueLTStd-MdEx";
+    font-weight: normal;
 }
 
 .container.flex {
@@ -103,11 +127,6 @@ section img.section-bg {
     column-gap: 50px;
 }
 
-.container.text {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-
 .container.center {
     text-align: center;
 }
@@ -115,7 +134,7 @@ section img.section-bg {
 /* Boutons */
 .button {
     position: relative;
-    width: 250px;
+    width: 320px;
     height: 70px;
     padding: 20px;
     display: flex;
@@ -123,21 +142,22 @@ section img.section-bg {
     border: none;
     cursor: pointer;
     color: white;
-    font-size: 100%;
+    font-size: 115%;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .button img {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 3%;
     transform: translate(-50%, -50%);
     width: 11%;
     transition: right 0.3s;
 }
 
 .button:hover img {
-    right: 5%;
+    right: 0%;
 }
 
 /* 3 differents types */

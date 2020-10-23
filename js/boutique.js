@@ -1,8 +1,11 @@
-// Boutons fleches de la galerie
+// Galerie
 var currentImage = 0;
 const imagesParent = document.getElementById("galerie-images");
 const circlesParent = document.getElementById("circles");
+
+// Quand clique sur les fleches
 function OnNextImage (step = 1) {
+    // Cache toutes les images et les cercles
     for (let index = 0; index < imagesParent.children.length; index++) {
         imagesParent.children[index].classList.remove("active");
         circlesParent.children[index].classList.remove("active");       
@@ -22,9 +25,23 @@ function OnNextImage (step = 1) {
         }
     }
     
+    // Affiche l'image et le cercle correspondant
     imagesParent.children[currentImage].classList.add("active");
     circlesParent.children[currentImage].classList.add("active");
 }
+
+// Quand clique sur les cercles en bas
+function GoToImage (target) {
+    for (let index = 0; index < imagesParent.children.length; index++) {
+        imagesParent.children[index].classList.remove("active");
+        circlesParent.children[index].classList.remove("active");       
+    }
+
+    currentImage = target;
+    imagesParent.children[target].classList.add("active");
+    circlesParent.children[target].classList.add("active");
+}
+
 
 // Categories de la boutique et affichage des items leurs correspondants
 const casquesParent = document.getElementById("casques");
@@ -55,7 +72,6 @@ function OnSelectShopCategory (itemName) {
     for (let index = 0; index < document.getElementById(itemName).children.length; index++) {
         setTimeout(() => {
             document.getElementById(itemName).children[index].style.opacity = "1";
-        }, 100 * index);
-        
+        }, 100 * index);       
     }
 }

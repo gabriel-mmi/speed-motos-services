@@ -1,13 +1,23 @@
 /* Galerie d'images */
 .galerie {
-    width: 50%;
+    width: 50vw;
+    height: 30vh;
     margin: 5vw auto;
     position: relative;
 }
 
 /* Images list */
+.galerie .images {
+    height: 100%;
+}
+
+.galerie .images li {
+    height: 100%;
+}
+
 .galerie .images li img {
-    width: 100%;
+    width: auto;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -51,7 +61,6 @@
 .galerie .ui .arrow.right img {
     transform: rotate(270deg);
     right: 25%;
-
 }
 
 .galerie .ui .arrow.left {
@@ -79,6 +88,7 @@
     border: none;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
 }
 
 .galerie .circle.active {
