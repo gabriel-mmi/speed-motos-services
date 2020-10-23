@@ -47,9 +47,9 @@
                 <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/icons/arrow.svg" alt="Icone d'une flèche vers la droite."></button>
                 <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/icons/arrow.svg" alt="Icone d'une flèche vers la gauche."></button>
                 <ul class="container flex center" id="circles">
-                    <button class="circle active"></button>
-                    <button class="circle"></button>
-                    <button class="circle"></button>
+                    <button class="circle active" onclick="GoToImage(0)"></button>
+                    <button class="circle" onclick="GoToImage(1)"></button>
+                    <button class="circle" onclick="GoToImage(2)"></button>
                 </ul>
             </div>
         </div>
@@ -196,6 +196,13 @@
            </ul>
            <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
         </footer>
+
+        <!-- Loading screen -->
+        <style type="text/css">@import url("css/loading.css");</style>
+        <div class="loading" id="loading">
+            <img src="assets/images/gif-anime.gif" alt="Animation de chargement de la page">
+        </div>
+        <script src="js/loading.js"></script>
 
     </body>
     <script src="js/boutique.js"></script>
