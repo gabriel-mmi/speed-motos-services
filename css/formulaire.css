@@ -75,7 +75,7 @@
  }
 
  .step .choix .ligne .btn-choix.active {
-     background-color: red;
+     background-color: #DA291C;
      color: white;
  }
 

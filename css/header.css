@@ -28,26 +28,30 @@ header .icon-container img {
 }
 
 /* Navigation links */
-header ul {
+header nav {
     width: 50%;
 }
 
-header ul li a {
+header ul {
+    width: 100%;
+}
+
+header nav ul li a {
     color: black;
     font-weight: bold;
     transition: color 0.5s, border-bottom-color 0.5s;
 }
 
-header ul:hover li a, header ul:hover li a.active {
+header nav ul:hover li a, header nav ul:hover li a.active {
     color: rgba(0, 0, 0, 0.39);
     border-bottom-color: rgba(0, 0, 0, 0.39);
 }
 
-header ul li a:hover, header ul li a.active:hover {
+header nav ul li a:hover, header nav ul li a.active:hover {
     color: black;
     border-bottom-color: black;
 }
 
-header ul li a.active {
+header nav ul li a.active {
     border-bottom: 4px solid black;
 }
