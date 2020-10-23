@@ -304,6 +304,9 @@ section.avis p {
     z-index: 10;
     right: 100px;
     top: 80%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.8s, right 0.8s;
 }
 
 .fixed-devis-button img {

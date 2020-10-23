@@ -36,7 +36,7 @@
         <!-- Landing section -->
         <section class="first">
             <div class="video">
-                <div class="container text">
+                <div class="container text" id="landing-text" style="opacity: 0; transition: opacity 0.8s;">
                     <h1>SPEED MOTOS <br> SERVICES</h1>
                     <p>À travers bien plus qu’une passion, découvrez<br>toute notre expertise et notre savoir-faire.</p>
                     <a href="#formulaire"><button class="button landing">Demander devis<img src="assets/images/icons/fleche.png" alt=""></button></button></a>
@@ -49,16 +49,16 @@
 
         <!-- Nos services section -->
         <section class="services">
-            <h2 class="center">LES SERVICES DU GARAGE :</h2>
+            <h2 class="center" id="services-title" style="opacity: 0; transition: opacity 0.8s;">LES SERVICES DU GARAGE :</h2>
             <div class="container flex between">
-                <div class="panel">
+                <div class="panel" id="services-panel-left" style="opacity: 0; transition: opacity 0.8s;">
                     <div class="container">
                         <h3>Nous contacter</h3>
                         <a href="#formulaire"><button class="button landing">Réservation <img src="assets/images/icons/fleche.png" alt="une fleche"></button></a>
                     </div>
                 </div>
                 <div class="vertical-line"></div>
-                <div class="panel">
+                <div class="panel" id="services-panel-right" style="opacity: 0; transition: opacity 0.8s;">
                     <div class="container">
                         <h3>Notre catalogue</h3>
                         <a href="boutique.html"><button class="button classic">Catalogue <img src="assets/images/icons/fleche.png" alt="une fleche"></button></a>
@@ -86,8 +86,8 @@
             <div class="container grid">
                 <img src="assets/images/franck.jpg" alt="Photo en plan américain du gérant du garage, Franck, en pleine activité de réparation.">
                 <div class="container text">
-                    <h2>FRANCK, NOTRE CHEF DE GARAGE :</h2>
-                    <p>Qu’est-ce qui est mieux que de faire réparer sa moto dans un bon garage ?<br>
+                    <h2 id="apropos-title" style="opacity: 0; transition: opacity 0.8s;">FRANCK, NOTRE CHEF DE GARAGE :</h2>
+                    <p id="apropos-para" style="opacity: 0; transition: opacity 0.8s;">Qu’est-ce qui est mieux que de faire réparer sa moto dans un bon garage ?<br>
                         Nous avons la réponse ! Faites-la réparer par Franck, le chef du garage depuis plus de 30 ans.
                         Découvrez son histoire.
                         </p>
@@ -99,13 +99,14 @@
         <!-- Avis -->
         <section class="avis" id="avis">
             <h2>LES DERNIERS AVIS CLIENTS</h2>
-            <ul class="container flex around">
-                <li><div class="container center"><img src="assets/images/icons/moto-icon1.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis1-texte"></p></li>
-                <li><div class="container center"><img src="assets/images/icons/moto-icon2.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis2-texte"></p></li>
-                <li><div class="container center"><img src="assets/images/icons/moto-icon3.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis3-texte"></p></li>            
+            <ul class="container flex around" id="avis-list">
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon1.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis1-texte"></p></li>
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon2.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis2-texte"></p></li>
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon3.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis3-texte"></p></li>            
             </ul>
         </section>
 
+        <!-- Formulaire de reservation -->
         <style type="text/css">@import url("css/formulaire.css");</style>
         <div class="formulaire" id="formulaire">
             <ul id="steps">
