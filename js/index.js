@@ -24,7 +24,6 @@ setInterval(function(){
     devisButton.style.top = nextPos + "px";
 }, 1);
 
-
 // Animation textes avis
 const avis1 = document.querySelector('#avis1-texte');
 const avis2 = document.querySelector('#avis2-texte');
