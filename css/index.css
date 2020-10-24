@@ -1,0 +1,323 @@
+/* Landing section */
+section.first {
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+}
+.video{
+    width: 100%;
+    height: 95vh;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.video video {
+    z-index:  -1;
+    width: 100%;
+    margin-top:3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+.video .container.text {
+    z-index: 20;
+    color: white;
+    padding-top: 15vw;
+    padding-left: 11.45vw;
+    padding-right: 11.45vw;
+}
+
+.video .container.text h1 {
+    line-height: 80px;
+}
+
+.video .container.text p {
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+
+.video button {
+    width: 350px;
+    font-size: 90%;
+    margin-top: 7vw;
+}
+
+/* Nos services section */
+.container_hover{
+    position: relative;
+    background-color:#F0F2EF;
+    width: 100%;
+    height: 50vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.text_body_left{
+    position: absolute;
+    left: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body_right{
+    position: absolute;
+    right: 330px;
+    top: 510px;
+    z-index: 3;
+    font-weight: 100%;
+    transition: font-weight 1s;
+}
+.text_body:hover{
+    font-weight: 200%;
+}
+.container_hover_left{
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color: purple;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+}
+.container_hover_left:hover{
+    opacity: 100%;
+    width: 55vw;
+}
+h3.container_hover_left{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+
+.container_hover_right{
+    position: absolute;
+    right: 0px;
+    top: 240px;
+    width: 50vw;
+    height: 60%;
+    z-index: 2;
+    background-color:yellow;
+    opacity: 0;
+    transition: width 0.5s, opacity 1s;
+    right: 0;
+}
+.container_hover_right:hover{
+    opacity: 100%;
+    width: 55%;
+    right: 5px;
+}
+h3.container_hover{
+    margin-top: 9.21vw;
+    width: 100%;
+    height: 9.5%;
+    line-height: 0.9;
+    text-align: center;
+    z-index: 2;
+    order: 1;
+}
+h3.container_hover_right{
+    text-align: center;
+    object-position: center;
+    color: white;
+}
+
+/* Banniere motos */
+.container_motos{
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.container_motos h2{
+    font-weight: bold;
+    line-height: 0.9;
+    margin-top: 10vw;
+}
+.text_left{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 2s;
+}
+.text_right{
+    position: absolute;
+    right:50%;
+    transform: translate(50%);
+    transition: 2s;
+}
+.overlay_container_moto{
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 1%);
+    width: 100%;
+    overflow: hidden;
+}
+.overlay_container_moto img {
+    width: 100%;
+    z-index: 2;
+}
+.overlay_container_moto h2{
+    color: white;
+    z-index: 200;
+}
+.container_motos_button{
+    margin-top: 25vw;
+    position:absolute;
+    z-index: 100;
+}
+.container_motos_button button {
+    color: white;
+}
+
+/* Services */
+.services {
+    padding: 0;
+    position: relative;
+}
+
+.services h2 {
+    margin-top: 10vw;
+}
+
+.services .container.flex {
+    height: 40vw;
+}
+
+main{
+    position: absolute;
+    top: 102vh;
+    z-index: -2;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.services .container.flex .panel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 10%;
+    background-color: transparent;
+    z-index: 0;
+    transition: background-color 1s;
+}
+
+.services .container.flex .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-line{
+    border-left: 2px solid rgba(0, 0, 0, 0.63);
+    height: 20vw;
+}
+
+/* A propos section */
+section.apropos {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+    background-color: black;
+}
+
+.container.text h2 {
+    border-top: 4px solid rgb(255, 255, 255);
+    padding-top: 10px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+section.apropos .container.grid {
+    column-gap: 150px;
+}
+
+section.apropos p {
+    margin-bottom: 1vw;
+    color: white;
+}
+
+section.apropos .container.text {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Section avis */
+section.avis {
+    width: 100%;
+    background-color: #F0F2EF;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+section.avis h2 {
+    text-align: center;
+    margin-bottom: 7vw;
+    font-size: 36px;
+}
+
+section.avis ul li {
+    width: 150px;
+    position: relative;
+}
+
+section.avis .icon {
+    width: 70%;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.308);
+}
+
+section.avis img {
+    margin-bottom: 20px;
+}
+
+section.avis p {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, 0%);
+    width: 180%;
+}
+
+
+/* Bouton flottant */
+.fixed-devis-button {
+    position: absolute;
+    z-index: 10;
+    right: 100px;
+    top: 80%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.8s, right 0.8s;
+}
+
+.fixed-devis-button img {
+    border-radius: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.fixed-devis-button a {
+    width: 100%;
+    height: 100%;
+}
+

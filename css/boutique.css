@@ -1,0 +1,87 @@
+/*Polices*/
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../assets/fonts/HelveticaNeueLTStd-Ex.otf");
+    font-weight: normal;
+}
+
+/* Categories en haut de l'écran */
+.categories {
+    width: 100%;
+    margin-top: 6.1vw;
+    padding: 2vw 0px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.categories ul li {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+}
+
+.categories ul li:not(:last-child) {
+    margin-right: 4vw;
+}
+
+.categories ul li p {
+    text-align: center;
+}
+
+.categories ul li img {
+    height: 100%;
+}
+
+/* Liste des articles */
+.articles-list {
+    width: 100%;
+    padding: 0 11.45vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    display: none;
+}
+
+.articles-list ul li {
+    transition: opacity 0.4s;
+}
+
+.articles-list .article-item {
+    width: 100%;
+    height: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    grid-template-rows: 1fr;
+}
+
+
+.articles-list li:not(:first-child) {
+    margin-top: 8vw;
+}
+
+.article-item img {
+    width: auto;
+    height: 100%;
+    max-height: 350px;
+    margin: 0 auto;
+}
+
+.article-item .container.text {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.12);
+}
+
+.article-item .container.text .button {
+    margin-top: 2vw;
+}
+
+/*containers*/
+
+.container.text {
+    font-family: "HelveticaNeue";
+    font-weight: normal;
+}

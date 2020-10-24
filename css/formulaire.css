@@ -1,0 +1,182 @@
+/*Modifs a partir d'ici de moi adel gloire à moi*/
+
+.formulaire {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/fond_formulaire_blur.png");
+    background-size: cover;
+    position: relative;
+}
+
+#steps {
+    width: 100%;
+    height: 100%;
+}
+
+#steps li {
+    width: 100%;
+    height: 100%;
+    padding: 10vw;
+    display: none;
+}
+
+.step {
+    width: 100%;
+    height: 120%;
+    padding: 2vw;
+    border: 2px solid white;
+    color: white;
+}
+
+.step .progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.123);
+    margin-bottom: 28px;
+}
+
+.step .progress-bar {
+    height: 8px;
+    background-color: rgb(221, 30, 30);
+    border-radius: 20px;
+}
+
+.step .question {
+    display: block;
+    text-align: center;
+}
+
+.step .choix {
+    width: 100%;
+    height: 50%;
+}
+
+.step .choix .ligne {
+    width: 80%;
+    height: 30%;
+    margin: 4% auto 0 auto;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+
+.step .choix .ligne:last-child {
+    margin-top: 3%;
+}
+ .step .choix .ligne button {
+     border: none;
+     height: 50px;
+     width: 300px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ .step .choix .ligne .btn-choix.active {
+     background-color: #DA291C;
+     color: white;
+ }
+
+ .step .choix .ligne button:last-child {
+    margin-left: 10%;
+ }
+
+ .step .button-container {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+ }
+
+ .step .choix .name-moto {
+    width: 60%;
+    height: 20%;
+    margin: 4% auto 0 auto;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+
+.step .choix .name-moto input {
+    width: 100%;
+    height: 100%;
+}
+.step .choix .savoir-moto {
+    width: 40%;
+    height: 30%;
+    margin: 4% auto 0 auto;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+}
+.step .button-container-terminer {
+    position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.step h2 {
+    text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.411);
+}
+
+.step .question {
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.178);
+}
+
+/* Formulaire */
+/* .formulaire img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.form_button{
+    display: inline-block;
+    position: absolute;
+    background-color: #307CFF;
+    border: none;
+    font-size: 16px;
+    width: 20%;
+    height: 7%;
+    text-align: center;
+    vertical-align: center;
+    transform: translate(-50%,50%);
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "HelveticaNeue";
+    font-weight: bold;
+    color: white;
+}
+
+.form_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.form_button:hover{
+    background-color: #0054e6;
+}
+
+.form_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .form_button:hover span {
+    padding-right: 25px;
+}
+  
+.form_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

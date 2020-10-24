@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Découvrez notre garage Speed Motos Services, experts depuis plus de 30 ans. Réparation Moto. Concessionnaire Moto et Royal-Enfield. Equipement Moto."><!-- MODIF -->
+        <title>Garage Speed Motos Services à Bordeaux</title> <!-- MODIF -->
+        <link rel="icon" href="assets/images/icons/favicon.ico" />
+        <link rel="stylesheet" href="css/commons.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <style type="text/css">@import url("css/header.css");</style>
+        <header class="container flex between" id="header">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services."></div>
+            <nav>
+                <ul class="container flex between">
+                    <li><a class="active" href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="#formulaire">Devis</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="js/header.js"></script>
+        
+        <!-- Contenu -->
+        
+        <!-- Bouton qui suis le scroll -->
+        <div class="fixed-devis-button" id="devis-button">
+            <a href="#formulaire"><img src="assets/images/btn-form.gif" alt="Liens vers la page devis"></a>
+        </div>
+
+        <!-- Landing section -->
+        <section class="first">
+            <div class="video">
+                <div class="container text" id="landing-text" style="opacity: 0; transition: opacity 0.8s;">
+                    <h1>SPEED MOTOS <br> SERVICES</h1>
+                    <p>À travers bien plus qu’une passion, découvrez<br>toute notre expertise et notre savoir-faire.</p>
+                    <a href="#formulaire"><button class="button landing">Demander devis<img src="assets/images/icons/fleche.png" alt=""></button></button></a>
+                </div>
+                <video autoplay muted loop preload class="video">
+                    <source src="assets/videos/videonoiurblanc.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- Nos services section -->
+        <section class="services">
+            <h2 class="center" id="services-title" style="opacity: 0; transition: opacity 0.8s;">LES SERVICES DU GARAGE :</h2>
+            <div class="container flex between">
+                <div class="panel" id="services-panel-left" style="opacity: 0; transition: opacity 0.8s;">
+                    <div class="container">
+                        <h3>Nous contacter.</h3>
+                        <a href="#formulaire"><button class="button landing">Réservation <img src="assets/images/icons/fleche.png" alt="une fleche"></button></a>
+                    </div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="panel" id="services-panel-right" style="opacity: 0; transition: opacity 0.8s;">
+                    <div class="container">
+                        <h3>Notre catalogue.</h3>
+                        <a href="boutique.html"><button class="button classic">Catalogue <img src="assets/images/icons/fleche.png" alt="une fleche"></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src='js/p5.js'></script>
+        <script src='js/3d.js'></script>
+
+        <div class="container_motos">
+            <div class="overlay_container_moto">
+                <div class="text_left"><h2>Motos neuves</h2></div>
+                <div class="text_right"><h2><br>ou d'occasion</br></h2></div>
+                <img src="assets/images/bg2.jpg" alt="">
+            </div>
+            <div class="container_motos_button">
+                <a href="apropos.html"><button class="button classic">Catalogue<img src="assets/images/icons/fleche.png" alt=""></button></a>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section class="apropos">
+            <img src="assets/images/moto1.jpg" alt="Image d'un motard montant sur une moto." class="section-bg">
+            <div class="container grid">
+                <img src="assets/images/franck.jpg" alt="Photo en plan américain du gérant du garage, Franck, en pleine activité de réparation.">
+                <div class="container text">
+                    <h2 id="apropos-title" style="opacity: 0; transition: opacity 0.8s;">FRANCK, NOTRE CHEF DE GARAGE :</h2>
+                    <p id="apropos-para" style="opacity: 0; transition: opacity 0.8s;">Qu’est-ce qui est mieux que de faire réparer sa moto dans un bon garage ?<br>
+                        Nous avons la réponse ! Faites-la réparer par Franck, le chef du garage depuis plus de 30 ans.
+                        Découvrez son histoire.
+                        </p>
+                    <a href="apropos.html"><button class="button classic">Découvrir<img src="assets/images/icons/fleche.png" alt="Pictogramme vectoriel représentant une flèche vers la droite appelant à aller vers une autre page."></button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avis -->
+        <section class="avis" id="avis">
+            <h2>LES DERNIERS AVIS CLIENTS</h2>
+            <ul class="container flex around" id="avis-list">
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon1.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis1-texte"></p></li>
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon2.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis2-texte"></p></li>
+                <li style="opacity: 0; transition: opacity 0.8s;"><div class="container center"><img src="assets/images/icons/moto-icon3.png" class="icon" alt="Pictogramme vectoriel représentant le côté droit d’une moto."></div><img src="assets/images/icons/etoile.png" alt="Pictogramme vectoriel représentant une étoile."><p id="avis3-texte"></p></li>            
+            </ul>
+        </section>
+
+        <!-- Formulaire de reservation -->
+        <style type="text/css">@import url("css/formulaire.css");</style>
+        <div class="formulaire" id="formulaire">
+            <ul id="steps">
+                
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 0%;"></div></div>
+                    <h3 class="question">QUAND SOUHAITEZ-VOUS FAIRE RÉPARER VOTRE MOTO ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux jours</button>
+                            <button class="btn-choix">Le semaine prochaine</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Dans deux semaines</button>
+                            <button class="btn-choix">Le mois prochain</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 14.3%;"></div></div>
+                    <h3 class="question">QU'EST-CE QUI DOIT ÊTRE RÉPARÉ ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">La transmission</button>
+                            <button class="btn-choix">Le moteur</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Les freins</button>
+                            <button class="btn-choix">Je ne sais pas vraiment</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 28.6%;"></div></div>
+                    <h3 class="question">COMBIEN DE KILOMÈTRES A VOTRE VÉHICULE ?</h3>
+                    <div class="choix">
+                        <div class="ligne">
+                            <button class="btn-choix">- de 50.000</button>
+                            <button class="btn-choix">Entre 50.000 et 100.000</button>
+                        </div>
+                        <div class="ligne">
+                            <button class="btn-choix">Entre 100.000 et 200.000</button>
+                            <button class="btn-choix">+ de 200.000</button>
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 42.9%;"></div></div>
+                    <h3 class="question">QUELLE EST L'ANNÉE DE VOTRE VÉHICULE, SA MARQUE ET SON MODÈLE ?</h3>
+                    <div class="choix">
+                        <div class="name-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar"  style="width: 57.2%;"></div></div>
+                    <h3 class="question">Y A-T-IL AUTRE CHOSE QUE NOUS DEVRIONS SAVOIR ?</h3>
+                    <div class="choix">
+                        <div class="name-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 71.5%;"></div></div>
+                    <h3 class="question">VEUILLEZ ENTRER VOTRE ADRESSE E-MAIL</h3>
+                    <div class="choix">
+                        <div class="name-moto">
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                    <div class="button-container"><button onclick="NextFormStep()" class="button classic">Suivant<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></div>
+                </div></li>
+
+                <li><div class="step">
+                    <h2>RÉSERVATION</h2>
+                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 100%;"></div></div>
+                    <h3 class="question">MERCI POUR VOTRE RÉSERVATION.<br>NOUS VOUS FERONS UN RETOUR DANS LES PLUS BREFS DÉLAIS.</h3>
+                    <a href="index.html"><div class="button-container"><button onclick="NextFormStep()" class="button classic">Terminer<img src="assets/images/icons/fleche.png" alt="Flèche vers la droite contenue dans les boutons signifiant un accès à une autre page."></button></a>
+                    
+                    </div>
+                </div></li>
+
+            </ul>
+           
+        </div>
+        <script src="js/formulaire.js"></script>
+
+        <!--  -->
+
+        <style type="text/css">@import url("css/footer.css");</style>
+        <footer>
+            <ul class="container flex between links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">Contactez-nous</a></li>
+                <li><a href="index.html#formulaire">Demander un devis</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="#">Nos motos</a></li>
+            </ul>
+            <div class="container flex sign">
+                <img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services">
+                <p>Speed moto services</p>
+           </div>
+           <ul class="container flex center politics">
+               <li><a href="#">Politique de confidentialité</a></li>
+               <li>-</li>
+               <li><a href="#">Utilisation des cookies</a></li>
+               <li>-</li>
+               <li><a href="#">Conditions d'utilisation</a></li>
+               <li>-</li>
+               <li><a href="#">Plan du site</a></li>
+               <li>-</li>
+               <li><a href="#">Informations commerciales</a></li>
+               <li>-</li>
+               <li><a href="#">Préferences</a></li>
+               <li>-</li>
+               <li><a href="#">Cookies</a></li>
+           </ul>
+           <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
+        </footer>
+
+        <!-- Loading screen -->
+        <style type="text/css">@import url("css/loading.css");</style>
+        <div class="loading" id="loading">
+            <img src="assets/images/Royal_enfield.gif" alt="Animation de chargement de la page">
+        </div>
+        <script src="js/loading.js"></script>
+
+    </body>
+    <script src="js/index.js"></script>
+</html>

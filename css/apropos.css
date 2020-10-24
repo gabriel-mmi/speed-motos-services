@@ -1,0 +1,84 @@
+/*Polices*/
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../assets/fonts/HelveticaNeueLTStd-Ex.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    src: url("../assets/fonts/HelveticaNeueLTStd-MdEx.otf");
+    font-weight: normal;
+}
+
+div {
+    transition: opacity 0.4s;
+}
+
+/* Frank presentation */
+section.first {
+    margin-top: 0px;
+}
+
+section.first .section-bg {
+    z-index: -1;
+}
+
+section.first .container.grid {
+    padding-top: 15vw;
+}
+
+section.first .container.text, section.first .container.text p {
+    padding: 0;
+    color: white;
+}
+
+section.first .container.text a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Location section */
+.location .section-bg {
+    opacity: 0.8;
+    width: auto;
+    height: 100%;
+}
+
+.location .float-parent {
+    width: 100%;
+    height: 65vw;
+    position: relative;
+}
+
+.location .container.float {
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 17vw;
+    left: 10vw;
+    padding: 3%;
+    background-color: black;
+    border-top: 4px solid white;
+}
+
+.location .container.float, .location .container.float p {
+    color: white;
+}
+
+.location iframe {
+    width: 37vw;
+    height: 25vw;
+    position: absolute;
+    top: 35vw;
+    right: 15vw;
+}
+
+
+/*containers*/
+
+.container.text {
+    font-family: "HelveticaNeueLTStd-MdEx";
+    font-weight: normal;
+}

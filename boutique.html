@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Boutique - Speed moto services</title>
+        <link rel="icon" href="assets/images/icons/favicon.ico"/>
+        <link rel="stylesheet" href="css/commons.css">
+        <link rel="stylesheet" href="css/boutique.css">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <style type="text/css">@import url("css/header.css");</style>
+        <header class="container flex between" id="header">
+            <div class="icon-container"><img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services."></div>
+            <nav>
+                <ul class="container flex between">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a class="active" href="boutique.html">Boutique</a></li>
+                    <li><a href="index.html#formulaire">Devis</a></li>
+                    <li><a href="apropos.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="js/header.js"></script>
+
+        <!-- Contenu -->
+
+        <!-- Séléction d'articles en haut de page -->
+        <div class="categories">
+            <ul class="container flex center">
+                <li><a onclick="OnSelectShopCategory('casques')"><img src="assets/images/icons/casque-icon.png" alt="Pictogramme vectoriel représentant le côté droit d’un casque de moto."><p>Casques</p></a></li>
+                <li><a onclick="OnSelectShopCategory('gants')"><img src="assets/images/icons/gants-icon.png" alt="Pictogramme vectoriel représentant la face d'un gant de moto."><p>Gants</p></a></li>
+                <li><a onclick="OnSelectShopCategory('vestes')"><img src="assets/images/icons/veste-icon.png" alt="Pictogramme vectoriel représentant une veste de moto de face."><p>Vestes</p></a></li>
+            </ul>
+        </div>
+
+        <!-- Galerie lorsque aucun item n'est séléctionné -->
+        <style type="text/css">@import url("css/galerie.css");</style>
+        <div class="galerie" id ="galerie">
+            <ul class="images" id="galerie-images">
+                <li class="active"><img src="assets/images/veste (1).jpg" alt="Photo produit veste bleue de marque Royal Enfield."></li>
+                <li><img src="assets/images/gants (2).png" alt="Photo produit d'un gant de moto."></li>
+                <li><img src="assets/images/casque (2).jpg" alt="Photo produit d'un casque de moto blanc, rouge et noir de marque Royal Enfield."></li>
+            </ul>
+            <div class="ui">
+                <button class="arrow left" onclick="OnNextImage(-1)"><img src="assets/images/icons/arrow.svg" alt="Icone d'une flèche vers la droite."></button>
+                <button class="arrow right" onclick="OnNextImage(1)"><img src="assets/images/icons/arrow.svg" alt="Icone d'une flèche vers la gauche."></button>
+                <ul class="container flex center" id="circles">
+                    <button class="circle active" onclick="GoToImage(0)"></button>
+                    <button class="circle" onclick="GoToImage(1)"></button>
+                    <button class="circle" onclick="GoToImage(2)"></button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="articles-list" id="articles-list">
+            <!-- Articles dans la categorie "Casques" -->
+            <ul id="casques">
+                <li><div class="container grid container grid article-item">
+                    <img src="assets/images/casque (1).png" alt="Photo produit d'un casque de moto blanc et noir de marque Royal Enfield.">
+                    <div class="container text">
+                        <h3>Black Open Face</h3>
+                        <p>Redécouvrez le plaisir de conduire une moto avec un confort imparable.</p>
+                        <button class="button shop"><p>€19,99</p><p>Acheter</p></button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Scrambler Open Face with Visor</h3>
+                        <p>Un casque bien plus qu'original. <br>Découvrez le tout dernier Scrambler de notre gamme.</p>
+                        <button class="button shop"><p>€29,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/casque (2).jpg" alt="Photo produit d'un casque de moto blanc, rouge et noir de marque Royal Enfield.">
+                </div></li>
+                <li><div class="container grid article-item">
+                    <img src="assets/images/casque (3).jpg" alt="Photo produit d'un casque de moto gris et noir de marque Royal Enfield.">
+                    <div class="container text">
+                        <h3>Gloss Grey Full Face</h3>
+                        <p>Qui dit haut de gamme dit confort implacable. <br>Achetez dès aujourd'hui le Gloss Grey Full Face, le meilleur du marché.</p>
+                        <button class="button shop"><p>€159,99</p><p>Acheter</p></button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Granado of Open Face</h3>
+                        <p>La liberté et le plaisir de l'old-school. Tout ça, dans un seul casque. <br>Achetez-le dès aujourd'hui.</p>
+                        <button class="button shop"><p>€69,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/casque (4).jpg" alt="Photo produit d'un casque de moto marron et noir de marque Royal Enfield.">
+                </div></li>
+            </ul>
+
+            <!-- Articles dans la categorie "Gants" -->
+            <ul id="gants">
+                <li><div class="container grid article-item">
+                    <img src="assets/images/gants (1).png" alt="Photo produit d'une paire de gants de moto noire de marque Shima.">
+                    <div class="container text">
+                        <h3>Black Gloves Shima</h3>
+                        <p>Se protéger tout en ayant l'une des meilleures paires du marché. Selon Franck, c'est possible. <br>Achetez dès maintenant les Black Gloves Shima.</p>
+                        <button class="button shop"><p>€49,99</p><p>Acheter</p></button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Furygan James Rusted D30</h3>
+                        <p>Ayez une classe imparable en moto. Pour cela rien de plus simple :<br>Obtenez la dernière paire de Furygan dès maintenant.</p>
+                        <button class="button shop"><p>€39,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/gants (2).png" alt="Photo produit d'un gant de moto marron.">
+                </div></li>
+                <li><div class="container grid article-item">
+                    <img src="assets/images/gants (3).jpg" alt="Photo produit d'un gant de moto marron clair.">
+                    <div class="container text">
+                        <h3>Royal Enfield Rocker Gloves</h3>
+                        <p>Le moteur des uns fait le malheur des autres. Incarnez le véritable esprit Royal Enfield avec les Rocker Gloves. <br>Disponible dès maintenant.</p>
+                        <button class="button shop"><p>€34,99</p><p>Acheter</p></button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Modeka Hot Classic</h3>
+                        <p>Une paire original, toutes faites pour une personne originale. Soyez uniques, soyez Modeka.<br>Disponible dès maintenant.</p>
+                        <button class="button shop"><p>€159,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/gants (4).jpg" alt="Photo produit d'une paire de gants de moto orange de la marque Modeka.">
+                </div></li>
+            </ul>
+
+            <!-- Articles dans la categorie "Vestes" -->
+            <ul id="vestes">
+                <li><div class="container grid article-item">
+                    <img src="assets/images/veste (1).jpg" alt="Photo produit veste bleue de marque Royal Enfield.">
+                    <div class="container text">
+                        <h3>Genuine Royal Enfield All Time Windcheater</h3>
+                        <p>Ressentez le confort d'un(e) vrai(e) motard(e). La Genuine vous accompagnera pour tous vos déplacements, pour votre plus grand plaisir.<br>À commander dès maintenant.</brQ></p>
+                        <button class="button shop"><p>€69,99</p><p>Acheter</p></button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Genuine Royal Enfield Marshal Jacket Khaki</h3>
+                        <p>Une veste old-school, dans l'esprit Royal Enfield. Elle a tout pour plaire. <br>À commander dès maintenant.</p>
+                        <button class="button shop"><p>€129,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/veste (2).jpg" alt="Photo produit veste marron clair de marque Royal Enfield.">
+                </div></li>
+                <li><div class="container grid article-item">
+                    <img src="assets/images/veste (3).jpg" alt="Photo produit veste rouge clair de marque Royal Enfield.">
+                    <div class="container text">
+                        <h3>Genuine Royal Enfield Reborn Jacket Salsa</h3>
+                        <p>Une veste digne des plus grand(e)s motard(e)s. Une couleur à en faire vibrer plus d'un(e).<br>À commander dès maintenant.</p>
+                        <button class="button shop"><p>€89,99</p><p>Acheter</button>
+                    </div>
+                </div></li>
+                <li><div class="container grid article-item">
+                    <div class="container text">
+                        <h3>Mens Royal Enfield Olive</h3>
+                        <p>On n'oublie jamais les classiques. Découvrez (ou récouvrez) la sensation du vrai cuir sur votre peau.<br>À commander dès maintenant.</p>
+                        <button class="button shop"><p>€99,99</p><p>Acheter</p></button>
+                    </div>
+                    <img src="assets/images/veste (4).png" alt="Photo produit veste en cuir noir et blanc crème de marque Royal Enfield.">
+                </div></li>
+            </ul>
+        </div>
+
+        <!--  -->
+
+        <style type="text/css">@import url("css/footer.css");</style>
+        <footer>
+            <ul class="container flex between links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">Contactez-nous</a></li>
+                <li><a href="index.html#devis">Demander un devis</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="#">Nos motos</a></li>
+            </ul>
+            <div class="container flex sign">
+                <img src="assets/images/icons/logo.png" alt="Logo vectoriel du garage Speed Motos Services. Il est de forme ronde avec sur la moitié supérieur des éléments rappelant l’apparence d’une roue de moto. Il y est écrit Speed Motos Services.">
+                <p>Speed moto services</p>
+           </div>
+           <ul class="container flex center politics">
+               <li><a href="#">Politique de confidentialité</a></li>
+               <li>-</li>
+               <li><a href="#">Utilisation des cookies</a></li>
+               <li>-</li>
+               <li><a href="#">Conditions d'utilisation</a></li>
+               <li>-</li>
+               <li><a href="#">Plan du site</a></li>
+               <li>-</li>
+               <li><a href="#">Informations commerciales</a></li>
+               <li>-</li>
+               <li><a href="#">Préferences</a></li>
+               <li>-</li>
+               <li><a href="#">Cookies</a></li>
+           </ul>
+           <p class="copyright">Copyright © 2020 Speed Motos. Tous droits réservés.</p>
+        </footer>
+
+        <!-- Loading screen -->
+        <style type="text/css">@import url("css/loading.css");</style>
+        <div class="loading" id="loading">
+            <img src="assets/images/Royal_enfield.gif" alt="Animation de chargement de la page">
+        </div>
+        <script src="js/loading.js"></script>
+
+    </body>
+    <script src="js/boutique.js"></script>
+</html>
